@@ -1,0 +1,6 @@
+framework module Pods_Bolt {
+  umbrella header "Pods-Bolt-umbrella.h"
+
+  export *
+  module * { export * }
+}

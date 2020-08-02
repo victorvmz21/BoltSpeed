@@ -1,0 +1,1323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F19AF4D6EC6C7485992E71C /* Pods_Bolt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E1339A1033970AE66004DA /* Pods_Bolt.framework */; };
+		5205651C24A5AE93002A7C80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5205651B24A5AE93002A7C80 /* AppDelegate.swift */; };
+		5205651E24A5AE93002A7C80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5205651D24A5AE93002A7C80 /* SceneDelegate.swift */; };
+		5205652324A5AE93002A7C80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5205652124A5AE93002A7C80 /* Main.storyboard */; };
+		5205652524A5AE94002A7C80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5205652424A5AE94002A7C80 /* Assets.xcassets */; };
+		5205652824A5AE94002A7C80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5205652624A5AE94002A7C80 /* LaunchScreen.storyboard */; };
+		5205653324A5AE94002A7C80 /* BoltTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5205653224A5AE94002A7C80 /* BoltTests.swift */; };
+		5205653E24A5AE94002A7C80 /* BoltUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5205653D24A5AE94002A7C80 /* BoltUITests.swift */; };
+		5205654324A5AE94002A7C80 /* Bolt.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5205654224A5AE94002A7C80 /* Bolt.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5205654924A5AE94002A7C80 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5205654724A5AE94002A7C80 /* Interface.storyboard */; };
+		5205654B24A5AE95002A7C80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5205654A24A5AE95002A7C80 /* Assets.xcassets */; };
+		5205655224A5AE95002A7C80 /* Bolt Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5205655124A5AE95002A7C80 /* Bolt Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5205655724A5AE95002A7C80 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5205655624A5AE95002A7C80 /* InterfaceController.swift */; };
+		5205655924A5AE95002A7C80 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5205655824A5AE95002A7C80 /* ExtensionDelegate.swift */; };
+		5205655B24A5AE95002A7C80 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5205655A24A5AE95002A7C80 /* NotificationController.swift */; };
+		5205655D24A5AE95002A7C80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5205655C24A5AE95002A7C80 /* Assets.xcassets */; };
+		5205657E24A5B684002A7C80 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5205657D24A5B684002A7C80 /* ViewExtension.swift */; };
+		5205658024A5B6DE002A7C80 /* SpeedometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5205657F24A5B6DD002A7C80 /* SpeedometerViewController.swift */; };
+		522A39F424A68401002D1D67 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 522A39F324A68401002D1D67 /* CoreLocation.framework */; };
+		523991FA24A9B27100640C77 /* SpeedTrackListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523991F924A9B27100640C77 /* SpeedTrackListTableViewController.swift */; };
+		523991FC24A9B29400640C77 /* TrackSpeedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523991FB24A9B29400640C77 /* TrackSpeedDetailViewController.swift */; };
+		523BEBB324CF92EA001CCCA0 /* CLLocationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523BEBB224CF92EA001CCCA0 /* CLLocationExtension.swift */; };
+		525E0DFF24D7411600EC2748 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E0DFE24D7411600EC2748 /* ViewControllerExtension.swift */; };
+		525E0E0324D757A900EC2748 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 525E0E0124D757A900EC2748 /* UIScrollView+EmptyDataSet.m */; };
+		529DBD1324B1876800D64FE7 /* Aero.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 529DBD1224B1876800D64FE7 /* Aero.ttf */; };
+		529DBD1424B1876800D64FE7 /* Aero.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 529DBD1224B1876800D64FE7 /* Aero.ttf */; };
+		52A7EE9624A5BE6400624202 /* CustomDashedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A7EE9524A5BE6400624202 /* CustomDashedView.swift */; };
+		52B3893924C4E0EA00598456 /* SpeedTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B3893824C4E0EA00598456 /* SpeedTrack.swift */; };
+		52B3893B24C4E23900598456 /* SpeedTrackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B3893A24C4E23900598456 /* SpeedTrackController.swift */; };
+		52B3893E24C4E3B200598456 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B3893D24C4E3B200598456 /* CloudKit.framework */; };
+		52B3894024C553FB00598456 /* SpeedTrackError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B3893F24C553FB00598456 /* SpeedTrackError.swift */; };
+		52B3894224C55D7E00598456 /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B3894124C55D7E00598456 /* Haptic.swift */; };
+		52B3894824C6328700598456 /* SpeedTrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B3894724C6328700598456 /* SpeedTrackTableViewCell.swift */; };
+		52B3894A24C6350D00598456 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B3894924C6350D00598456 /* DateExtension.swift */; };
+		52B3894C24C63ED300598456 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52B3894B24C63ED300598456 /* Colors.xcassets */; };
+		A32AF268261466F6BE4C6BA7 /* Pods_Bolt_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E5E5D09E91C159BDBF28B1 /* Pods_Bolt_WatchKit_App.framework */; };
+		B15A19C9193853AA9996DE2A /* Pods_BoltTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13EFCC693BCD336BC50906E0 /* Pods_BoltTests.framework */; };
+		B8AB3B25189BF91AFFACAF0F /* Pods_Bolt_BoltUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CA38CC8D65724F7572D5C2 /* Pods_Bolt_BoltUITests.framework */; };
+		E855781BD72A46B7B5CDE4A4 /* Pods_Bolt_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C64C8EB1D5265E7413BFD1C5 /* Pods_Bolt_WatchKit_Extension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5205652F24A5AE94002A7C80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5205651024A5AE93002A7C80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5205651724A5AE93002A7C80;
+			remoteInfo = Bolt;
+		};
+		5205653A24A5AE94002A7C80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5205651024A5AE93002A7C80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5205651724A5AE93002A7C80;
+			remoteInfo = Bolt;
+		};
+		5205654424A5AE94002A7C80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5205651024A5AE93002A7C80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5205654124A5AE94002A7C80;
+			remoteInfo = "Bolt WatchKit App";
+		};
+		5205655324A5AE95002A7C80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5205651024A5AE93002A7C80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5205655024A5AE95002A7C80;
+			remoteInfo = "Bolt WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5205656524A5AE95002A7C80 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5205655224A5AE95002A7C80 /* Bolt Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5205656924A5AE95002A7C80 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5205654324A5AE94002A7C80 /* Bolt.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		02A1DF92F016C590CB499D02 /* Pods-Bolt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bolt.release.xcconfig"; path = "Target Support Files/Pods-Bolt/Pods-Bolt.release.xcconfig"; sourceTree = "<group>"; };
+		12F398C1005EBE47C15E70DE /* Pods-Bolt-BoltUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bolt-BoltUITests.release.xcconfig"; path = "Target Support Files/Pods-Bolt-BoltUITests/Pods-Bolt-BoltUITests.release.xcconfig"; sourceTree = "<group>"; };
+		13EFCC693BCD336BC50906E0 /* Pods_BoltTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoltTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19533F768548F6A87DCF4ABB /* Pods-Bolt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bolt.debug.xcconfig"; path = "Target Support Files/Pods-Bolt/Pods-Bolt.debug.xcconfig"; sourceTree = "<group>"; };
+		5205651824A5AE93002A7C80 /* Bolt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bolt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5205651B24A5AE93002A7C80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5205651D24A5AE93002A7C80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5205652224A5AE93002A7C80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5205652424A5AE94002A7C80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5205652724A5AE94002A7C80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5205652924A5AE94002A7C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5205652E24A5AE94002A7C80 /* BoltTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoltTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5205653224A5AE94002A7C80 /* BoltTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoltTests.swift; sourceTree = "<group>"; };
+		5205653424A5AE94002A7C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5205653924A5AE94002A7C80 /* BoltUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoltUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5205653D24A5AE94002A7C80 /* BoltUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoltUITests.swift; sourceTree = "<group>"; };
+		5205653F24A5AE94002A7C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5205654224A5AE94002A7C80 /* Bolt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bolt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5205654824A5AE94002A7C80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5205654A24A5AE95002A7C80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5205654C24A5AE95002A7C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5205655124A5AE95002A7C80 /* Bolt Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Bolt Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5205655624A5AE95002A7C80 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		5205655824A5AE95002A7C80 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		5205655A24A5AE95002A7C80 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		5205655C24A5AE95002A7C80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5205655E24A5AE95002A7C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5205655F24A5AE95002A7C80 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		5205657D24A5B684002A7C80 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		5205657F24A5B6DD002A7C80 /* SpeedometerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedometerViewController.swift; sourceTree = "<group>"; };
+		522A39F324A68401002D1D67 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		523991F924A9B27100640C77 /* SpeedTrackListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTrackListTableViewController.swift; sourceTree = "<group>"; };
+		523991FB24A9B29400640C77 /* TrackSpeedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackSpeedDetailViewController.swift; sourceTree = "<group>"; };
+		523BEBB224CF92EA001CCCA0 /* CLLocationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationExtension.swift; sourceTree = "<group>"; };
+		525E0DFE24D7411600EC2748 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		525E0E0024D757A800EC2748 /* Bolt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bolt-Bridging-Header.h"; sourceTree = "<group>"; };
+		525E0E0124D757A900EC2748 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
+		525E0E0224D757A900EC2748 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
+		529DBD1124B1060F00D64FE7 /* Bolt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bolt.entitlements; sourceTree = "<group>"; };
+		529DBD1224B1876800D64FE7 /* Aero.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aero.ttf; sourceTree = "<group>"; };
+		52A7EE9524A5BE6400624202 /* CustomDashedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDashedView.swift; sourceTree = "<group>"; };
+		52B3893424C3A79A00598456 /* homeToSchool.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = homeToSchool.gpx; path = Bolt/View/homeToSchool.gpx; sourceTree = SOURCE_ROOT; };
+		52B3893824C4E0EA00598456 /* SpeedTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTrack.swift; sourceTree = "<group>"; };
+		52B3893A24C4E23900598456 /* SpeedTrackController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTrackController.swift; sourceTree = "<group>"; };
+		52B3893C24C4E3AE00598456 /* Bolt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bolt.entitlements; sourceTree = "<group>"; };
+		52B3893D24C4E3B200598456 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		52B3893F24C553FB00598456 /* SpeedTrackError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTrackError.swift; sourceTree = "<group>"; };
+		52B3894124C55D7E00598456 /* Haptic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptic.swift; sourceTree = "<group>"; };
+		52B3894724C6328700598456 /* SpeedTrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTrackTableViewCell.swift; sourceTree = "<group>"; };
+		52B3894924C6350D00598456 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		52B3894B24C63ED300598456 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		5F430D2654A1267B5C5C8665 /* Pods-Bolt WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bolt WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-Bolt WatchKit App/Pods-Bolt WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		68144DFA7CA4B431D97CFDFA /* Pods-Bolt WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bolt WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-Bolt WatchKit Extension/Pods-Bolt WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		6C088C33CE566D2284FDAC94 /* Pods-Bolt WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bolt WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-Bolt WatchKit App/Pods-Bolt WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		8013CF7CF66E09A5B611CC8E /* Pods-BoltTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoltTests.debug.xcconfig"; path = "Target Support Files/Pods-BoltTests/Pods-BoltTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E405323C774A21B7E657D1D /* Pods-Bolt WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bolt WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-Bolt WatchKit Extension/Pods-Bolt WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		97E5E5D09E91C159BDBF28B1 /* Pods_Bolt_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bolt_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B82B9CBCED03326E4983ED17 /* Pods-BoltTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoltTests.release.xcconfig"; path = "Target Support Files/Pods-BoltTests/Pods-BoltTests.release.xcconfig"; sourceTree = "<group>"; };
+		BF73F82722FCDF302CFA6CB1 /* Pods-Bolt-BoltUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bolt-BoltUITests.debug.xcconfig"; path = "Target Support Files/Pods-Bolt-BoltUITests/Pods-Bolt-BoltUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C64C8EB1D5265E7413BFD1C5 /* Pods_Bolt_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bolt_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0E1339A1033970AE66004DA /* Pods_Bolt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bolt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1CA38CC8D65724F7572D5C2 /* Pods_Bolt_BoltUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bolt_BoltUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5205651524A5AE93002A7C80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				522A39F424A68401002D1D67 /* CoreLocation.framework in Frameworks */,
+				52B3893E24C4E3B200598456 /* CloudKit.framework in Frameworks */,
+				0F19AF4D6EC6C7485992E71C /* Pods_Bolt.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5205652B24A5AE94002A7C80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B15A19C9193853AA9996DE2A /* Pods_BoltTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5205653624A5AE94002A7C80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8AB3B25189BF91AFFACAF0F /* Pods_Bolt_BoltUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5205654E24A5AE95002A7C80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E855781BD72A46B7B5CDE4A4 /* Pods_Bolt_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E3201F9636EC337D36ABA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A32AF268261466F6BE4C6BA7 /* Pods_Bolt_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5205650F24A5AE93002A7C80 = {
+			isa = PBXGroup;
+			children = (
+				529DBD1124B1060F00D64FE7 /* Bolt.entitlements */,
+				5205651A24A5AE93002A7C80 /* Bolt */,
+				5205653124A5AE94002A7C80 /* BoltTests */,
+				5205653C24A5AE94002A7C80 /* BoltUITests */,
+				523991F824A9A89700640C77 /* Watch */,
+				5205651924A5AE93002A7C80 /* Products */,
+				522A39F224A68401002D1D67 /* Frameworks */,
+				70D5C68F96812A49F419835C /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		5205651924A5AE93002A7C80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5205651824A5AE93002A7C80 /* Bolt.app */,
+				5205652E24A5AE94002A7C80 /* BoltTests.xctest */,
+				5205653924A5AE94002A7C80 /* BoltUITests.xctest */,
+				5205654224A5AE94002A7C80 /* Bolt.app */,
+				5205655124A5AE95002A7C80 /* Bolt Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5205651A24A5AE93002A7C80 /* Bolt */ = {
+			isa = PBXGroup;
+			children = (
+				52B3893C24C4E3AE00598456 /* Bolt.entitlements */,
+				5205657824A5B5EC002A7C80 /* Model */,
+				5205657424A5B5AF002A7C80 /* View */,
+				5205657524A5B5B4002A7C80 /* Controller */,
+				5205657C24A5B666002A7C80 /* Helper+Extensions */,
+				5205657324A5AE9F002A7C80 /* Resources */,
+			);
+			path = Bolt;
+			sourceTree = "<group>";
+		};
+		5205653124A5AE94002A7C80 /* BoltTests */ = {
+			isa = PBXGroup;
+			children = (
+				5205653224A5AE94002A7C80 /* BoltTests.swift */,
+				5205653424A5AE94002A7C80 /* Info.plist */,
+			);
+			path = BoltTests;
+			sourceTree = "<group>";
+		};
+		5205653C24A5AE94002A7C80 /* BoltUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5205653D24A5AE94002A7C80 /* BoltUITests.swift */,
+				5205653F24A5AE94002A7C80 /* Info.plist */,
+			);
+			path = BoltUITests;
+			sourceTree = "<group>";
+		};
+		5205654624A5AE94002A7C80 /* Bolt WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				525E0E0424D75EFB00EC2748 /* View */,
+				525E0E0724D75F4400EC2748 /* Controller */,
+				525E0E0624D75F1100EC2748 /* Resources */,
+			);
+			path = "Bolt WatchKit App";
+			sourceTree = "<group>";
+		};
+		5205655524A5AE95002A7C80 /* Bolt WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5205655824A5AE95002A7C80 /* ExtensionDelegate.swift */,
+				5205655A24A5AE95002A7C80 /* NotificationController.swift */,
+				5205655C24A5AE95002A7C80 /* Assets.xcassets */,
+				5205655E24A5AE95002A7C80 /* Info.plist */,
+				5205655F24A5AE95002A7C80 /* PushNotificationPayload.apns */,
+			);
+			path = "Bolt WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		5205657324A5AE9F002A7C80 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				529DBD1524B1876D00D64FE7 /* Font */,
+				5205651B24A5AE93002A7C80 /* AppDelegate.swift */,
+				5205651D24A5AE93002A7C80 /* SceneDelegate.swift */,
+				5205652424A5AE94002A7C80 /* Assets.xcassets */,
+				5205652624A5AE94002A7C80 /* LaunchScreen.storyboard */,
+				5205652924A5AE94002A7C80 /* Info.plist */,
+				52B3894B24C63ED300598456 /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5205657424A5B5AF002A7C80 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52B3894624C6327100598456 /* Custom Cell */,
+				52B3894524C6326900598456 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5205657524A5B5B4002A7C80 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5205657724A5B5BB002A7C80 /* Model Controller */,
+				5205657624A5B5B7002A7C80 /* View Controller */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5205657624A5B5B7002A7C80 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5205657F24A5B6DD002A7C80 /* SpeedometerViewController.swift */,
+				523991F924A9B27100640C77 /* SpeedTrackListTableViewController.swift */,
+				523991FB24A9B29400640C77 /* TrackSpeedDetailViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		5205657724A5B5BB002A7C80 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52B3893A24C4E23900598456 /* SpeedTrackController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		5205657824A5B5EC002A7C80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52B3893424C3A79A00598456 /* homeToSchool.gpx */,
+				52B3893824C4E0EA00598456 /* SpeedTrack.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5205657C24A5B666002A7C80 /* Helper+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				525E0E0224D757A900EC2748 /* UIScrollView+EmptyDataSet.h */,
+				525E0E0124D757A900EC2748 /* UIScrollView+EmptyDataSet.m */,
+				5205657D24A5B684002A7C80 /* ViewExtension.swift */,
+				52A7EE9524A5BE6400624202 /* CustomDashedView.swift */,
+				52B3893F24C553FB00598456 /* SpeedTrackError.swift */,
+				52B3894124C55D7E00598456 /* Haptic.swift */,
+				52B3894924C6350D00598456 /* DateExtension.swift */,
+				523BEBB224CF92EA001CCCA0 /* CLLocationExtension.swift */,
+				525E0DFE24D7411600EC2748 /* ViewControllerExtension.swift */,
+				525E0E0024D757A800EC2748 /* Bolt-Bridging-Header.h */,
+			);
+			path = "Helper+Extensions";
+			sourceTree = "<group>";
+		};
+		522A39F224A68401002D1D67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52B3893D24C4E3B200598456 /* CloudKit.framework */,
+				522A39F324A68401002D1D67 /* CoreLocation.framework */,
+				D0E1339A1033970AE66004DA /* Pods_Bolt.framework */,
+				97E5E5D09E91C159BDBF28B1 /* Pods_Bolt_WatchKit_App.framework */,
+				C64C8EB1D5265E7413BFD1C5 /* Pods_Bolt_WatchKit_Extension.framework */,
+				D1CA38CC8D65724F7572D5C2 /* Pods_Bolt_BoltUITests.framework */,
+				13EFCC693BCD336BC50906E0 /* Pods_BoltTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		523991F824A9A89700640C77 /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				5205654624A5AE94002A7C80 /* Bolt WatchKit App */,
+				5205655524A5AE95002A7C80 /* Bolt WatchKit Extension */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		525E0E0424D75EFB00EC2748 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				525E0E0524D75F0500EC2748 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		525E0E0524D75F0500EC2748 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5205654724A5AE94002A7C80 /* Interface.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		525E0E0624D75F1100EC2748 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5205654A24A5AE95002A7C80 /* Assets.xcassets */,
+				5205654C24A5AE95002A7C80 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		525E0E0724D75F4400EC2748 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5205655624A5AE95002A7C80 /* InterfaceController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		529DBD1524B1876D00D64FE7 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				529DBD1224B1876800D64FE7 /* Aero.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		52B3894524C6326900598456 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5205652124A5AE93002A7C80 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		52B3894624C6327100598456 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				52B3894724C6328700598456 /* SpeedTrackTableViewCell.swift */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		70D5C68F96812A49F419835C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19533F768548F6A87DCF4ABB /* Pods-Bolt.debug.xcconfig */,
+				02A1DF92F016C590CB499D02 /* Pods-Bolt.release.xcconfig */,
+				6C088C33CE566D2284FDAC94 /* Pods-Bolt WatchKit App.debug.xcconfig */,
+				5F430D2654A1267B5C5C8665 /* Pods-Bolt WatchKit App.release.xcconfig */,
+				8E405323C774A21B7E657D1D /* Pods-Bolt WatchKit Extension.debug.xcconfig */,
+				68144DFA7CA4B431D97CFDFA /* Pods-Bolt WatchKit Extension.release.xcconfig */,
+				BF73F82722FCDF302CFA6CB1 /* Pods-Bolt-BoltUITests.debug.xcconfig */,
+				12F398C1005EBE47C15E70DE /* Pods-Bolt-BoltUITests.release.xcconfig */,
+				8013CF7CF66E09A5B611CC8E /* Pods-BoltTests.debug.xcconfig */,
+				B82B9CBCED03326E4983ED17 /* Pods-BoltTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5205651724A5AE93002A7C80 /* Bolt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5205656A24A5AE95002A7C80 /* Build configuration list for PBXNativeTarget "Bolt" */;
+			buildPhases = (
+				1203BD86EF8B62C0721D6E71 /* [CP] Check Pods Manifest.lock */,
+				5205651424A5AE93002A7C80 /* Sources */,
+				5205651524A5AE93002A7C80 /* Frameworks */,
+				5205651624A5AE93002A7C80 /* Resources */,
+				5205656924A5AE95002A7C80 /* Embed Watch Content */,
+				58AD8052F005E382929CAC7E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5205654524A5AE94002A7C80 /* PBXTargetDependency */,
+			);
+			name = Bolt;
+			productName = Bolt;
+			productReference = 5205651824A5AE93002A7C80 /* Bolt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5205652D24A5AE94002A7C80 /* BoltTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5205656D24A5AE95002A7C80 /* Build configuration list for PBXNativeTarget "BoltTests" */;
+			buildPhases = (
+				8AE78E7E20AF2B650E0C4747 /* [CP] Check Pods Manifest.lock */,
+				5205652A24A5AE94002A7C80 /* Sources */,
+				5205652B24A5AE94002A7C80 /* Frameworks */,
+				5205652C24A5AE94002A7C80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5205653024A5AE94002A7C80 /* PBXTargetDependency */,
+			);
+			name = BoltTests;
+			productName = BoltTests;
+			productReference = 5205652E24A5AE94002A7C80 /* BoltTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5205653824A5AE94002A7C80 /* BoltUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5205657024A5AE95002A7C80 /* Build configuration list for PBXNativeTarget "BoltUITests" */;
+			buildPhases = (
+				153811A40A3BEA5052A88C20 /* [CP] Check Pods Manifest.lock */,
+				5205653524A5AE94002A7C80 /* Sources */,
+				5205653624A5AE94002A7C80 /* Frameworks */,
+				5205653724A5AE94002A7C80 /* Resources */,
+				CF3EE3948ADD56566F6F0DDF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5205653B24A5AE94002A7C80 /* PBXTargetDependency */,
+			);
+			name = BoltUITests;
+			productName = BoltUITests;
+			productReference = 5205653924A5AE94002A7C80 /* BoltUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5205654124A5AE94002A7C80 /* Bolt WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5205656624A5AE95002A7C80 /* Build configuration list for PBXNativeTarget "Bolt WatchKit App" */;
+			buildPhases = (
+				6DE0A4A5ED00868650F5EC4C /* [CP] Check Pods Manifest.lock */,
+				5205654024A5AE94002A7C80 /* Resources */,
+				5205656524A5AE95002A7C80 /* Embed App Extensions */,
+				79E3201F9636EC337D36ABA2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5205655424A5AE95002A7C80 /* PBXTargetDependency */,
+			);
+			name = "Bolt WatchKit App";
+			productName = "Bolt WatchKit App";
+			productReference = 5205654224A5AE94002A7C80 /* Bolt.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		5205655024A5AE95002A7C80 /* Bolt WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5205656224A5AE95002A7C80 /* Build configuration list for PBXNativeTarget "Bolt WatchKit Extension" */;
+			buildPhases = (
+				DBCA7A2555E15B2F9C898D34 /* [CP] Check Pods Manifest.lock */,
+				5205654D24A5AE95002A7C80 /* Sources */,
+				5205654E24A5AE95002A7C80 /* Frameworks */,
+				5205654F24A5AE95002A7C80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bolt WatchKit Extension";
+			productName = "Bolt WatchKit Extension";
+			productReference = 5205655124A5AE95002A7C80 /* Bolt Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5205651024A5AE93002A7C80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = Atomuz;
+				TargetAttributes = {
+					5205651724A5AE93002A7C80 = {
+						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
+					};
+					5205652D24A5AE94002A7C80 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 5205651724A5AE93002A7C80;
+					};
+					5205653824A5AE94002A7C80 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 5205651724A5AE93002A7C80;
+					};
+					5205654124A5AE94002A7C80 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					5205655024A5AE95002A7C80 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 5205651324A5AE93002A7C80 /* Build configuration list for PBXProject "Bolt" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5205650F24A5AE93002A7C80;
+			productRefGroup = 5205651924A5AE93002A7C80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5205651724A5AE93002A7C80 /* Bolt */,
+				5205652D24A5AE94002A7C80 /* BoltTests */,
+				5205653824A5AE94002A7C80 /* BoltUITests */,
+				5205654124A5AE94002A7C80 /* Bolt WatchKit App */,
+				5205655024A5AE95002A7C80 /* Bolt WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5205651624A5AE93002A7C80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52B3894C24C63ED300598456 /* Colors.xcassets in Resources */,
+				5205652824A5AE94002A7C80 /* LaunchScreen.storyboard in Resources */,
+				5205652524A5AE94002A7C80 /* Assets.xcassets in Resources */,
+				5205652324A5AE93002A7C80 /* Main.storyboard in Resources */,
+				529DBD1324B1876800D64FE7 /* Aero.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5205652C24A5AE94002A7C80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5205653724A5AE94002A7C80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5205654024A5AE94002A7C80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				529DBD1424B1876800D64FE7 /* Aero.ttf in Resources */,
+				5205654B24A5AE95002A7C80 /* Assets.xcassets in Resources */,
+				5205654924A5AE94002A7C80 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5205654F24A5AE95002A7C80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5205655D24A5AE95002A7C80 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1203BD86EF8B62C0721D6E71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bolt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		153811A40A3BEA5052A88C20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bolt-BoltUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58AD8052F005E382929CAC7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bolt/Pods-Bolt-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bolt/Pods-Bolt-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bolt/Pods-Bolt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DE0A4A5ED00868650F5EC4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bolt WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AE78E7E20AF2B650E0C4747 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BoltTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF3EE3948ADD56566F6F0DDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bolt-BoltUITests/Pods-Bolt-BoltUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bolt-BoltUITests/Pods-Bolt-BoltUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bolt-BoltUITests/Pods-Bolt-BoltUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBCA7A2555E15B2F9C898D34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bolt WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5205651424A5AE93002A7C80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5205657E24A5B684002A7C80 /* ViewExtension.swift in Sources */,
+				52B3894824C6328700598456 /* SpeedTrackTableViewCell.swift in Sources */,
+				52B3893B24C4E23900598456 /* SpeedTrackController.swift in Sources */,
+				52B3893924C4E0EA00598456 /* SpeedTrack.swift in Sources */,
+				5205658024A5B6DE002A7C80 /* SpeedometerViewController.swift in Sources */,
+				52B3894A24C6350D00598456 /* DateExtension.swift in Sources */,
+				52B3894224C55D7E00598456 /* Haptic.swift in Sources */,
+				523991FA24A9B27100640C77 /* SpeedTrackListTableViewController.swift in Sources */,
+				525E0DFF24D7411600EC2748 /* ViewControllerExtension.swift in Sources */,
+				52A7EE9624A5BE6400624202 /* CustomDashedView.swift in Sources */,
+				523BEBB324CF92EA001CCCA0 /* CLLocationExtension.swift in Sources */,
+				5205651C24A5AE93002A7C80 /* AppDelegate.swift in Sources */,
+				5205651E24A5AE93002A7C80 /* SceneDelegate.swift in Sources */,
+				523991FC24A9B29400640C77 /* TrackSpeedDetailViewController.swift in Sources */,
+				525E0E0324D757A900EC2748 /* UIScrollView+EmptyDataSet.m in Sources */,
+				52B3894024C553FB00598456 /* SpeedTrackError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5205652A24A5AE94002A7C80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5205653324A5AE94002A7C80 /* BoltTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5205653524A5AE94002A7C80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5205653E24A5AE94002A7C80 /* BoltUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5205654D24A5AE95002A7C80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5205655B24A5AE95002A7C80 /* NotificationController.swift in Sources */,
+				5205655924A5AE95002A7C80 /* ExtensionDelegate.swift in Sources */,
+				5205655724A5AE95002A7C80 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5205653024A5AE94002A7C80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5205651724A5AE93002A7C80 /* Bolt */;
+			targetProxy = 5205652F24A5AE94002A7C80 /* PBXContainerItemProxy */;
+		};
+		5205653B24A5AE94002A7C80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5205651724A5AE93002A7C80 /* Bolt */;
+			targetProxy = 5205653A24A5AE94002A7C80 /* PBXContainerItemProxy */;
+		};
+		5205654524A5AE94002A7C80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5205654124A5AE94002A7C80 /* Bolt WatchKit App */;
+			targetProxy = 5205654424A5AE94002A7C80 /* PBXContainerItemProxy */;
+		};
+		5205655424A5AE95002A7C80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5205655024A5AE95002A7C80 /* Bolt WatchKit Extension */;
+			targetProxy = 5205655324A5AE95002A7C80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5205652124A5AE93002A7C80 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5205652224A5AE93002A7C80 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5205652624A5AE94002A7C80 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5205652724A5AE94002A7C80 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5205654724A5AE94002A7C80 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5205654824A5AE94002A7C80 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5205656024A5AE95002A7C80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5205656124A5AE95002A7C80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5205656324A5AE95002A7C80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E405323C774A21B7E657D1D /* Pods-Bolt WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P92JGZ383;
+				INFOPLIST_FILE = "Watch/Bolt WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atomuz.Bolt-Speed.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "Bolt Extension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		5205656424A5AE95002A7C80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68144DFA7CA4B431D97CFDFA /* Pods-Bolt WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P92JGZ383;
+				INFOPLIST_FILE = "Watch/Bolt WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atomuz.Bolt-Speed.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "Bolt Extension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		5205656724A5AE95002A7C80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C088C33CE566D2284FDAC94 /* Pods-Bolt WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Bolt.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9P92JGZ383;
+				IBSC_MODULE = Bolt_WatchKit_Extension;
+				INFOPLIST_FILE = "Watch/Bolt WatchKit App/Resources/Info.plist";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atomuz.Bolt-Speed.watchkitapp";
+				PRODUCT_NAME = Bolt;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		5205656824A5AE95002A7C80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F430D2654A1267B5C5C8665 /* Pods-Bolt WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Bolt.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9P92JGZ383;
+				IBSC_MODULE = Bolt_WatchKit_Extension;
+				INFOPLIST_FILE = "Watch/Bolt WatchKit App/Resources/Info.plist";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atomuz.Bolt-Speed.watchkitapp";
+				PRODUCT_NAME = Bolt;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		5205656B24A5AE95002A7C80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19533F768548F6A87DCF4ABB /* Pods-Bolt.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Bolt/Bolt.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9P92JGZ383;
+				INFOPLIST_FILE = Bolt/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atomuz.Bolt-Speed";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bolt/Helper+Extensions/Bolt-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5205656C24A5AE95002A7C80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02A1DF92F016C590CB499D02 /* Pods-Bolt.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Bolt/Bolt.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9P92JGZ383;
+				INFOPLIST_FILE = Bolt/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atomuz.Bolt-Speed";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bolt/Helper+Extensions/Bolt-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5205656E24A5AE95002A7C80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8013CF7CF66E09A5B611CC8E /* Pods-BoltTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P92JGZ383;
+				INFOPLIST_FILE = BoltTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.atomuz.BoltTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bolt.app/Bolt";
+			};
+			name = Debug;
+		};
+		5205656F24A5AE95002A7C80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B82B9CBCED03326E4983ED17 /* Pods-BoltTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P92JGZ383;
+				INFOPLIST_FILE = BoltTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.atomuz.BoltTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bolt.app/Bolt";
+			};
+			name = Release;
+		};
+		5205657124A5AE95002A7C80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF73F82722FCDF302CFA6CB1 /* Pods-Bolt-BoltUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P92JGZ383;
+				INFOPLIST_FILE = BoltUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.atomuz.BoltUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bolt;
+			};
+			name = Debug;
+		};
+		5205657224A5AE95002A7C80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12F398C1005EBE47C15E70DE /* Pods-Bolt-BoltUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P92JGZ383;
+				INFOPLIST_FILE = BoltUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.atomuz.BoltUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Bolt;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5205651324A5AE93002A7C80 /* Build configuration list for PBXProject "Bolt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5205656024A5AE95002A7C80 /* Debug */,
+				5205656124A5AE95002A7C80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5205656224A5AE95002A7C80 /* Build configuration list for PBXNativeTarget "Bolt WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5205656324A5AE95002A7C80 /* Debug */,
+				5205656424A5AE95002A7C80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5205656624A5AE95002A7C80 /* Build configuration list for PBXNativeTarget "Bolt WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5205656724A5AE95002A7C80 /* Debug */,
+				5205656824A5AE95002A7C80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5205656A24A5AE95002A7C80 /* Build configuration list for PBXNativeTarget "Bolt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5205656B24A5AE95002A7C80 /* Debug */,
+				5205656C24A5AE95002A7C80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5205656D24A5AE95002A7C80 /* Build configuration list for PBXNativeTarget "BoltTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5205656E24A5AE95002A7C80 /* Debug */,
+				5205656F24A5AE95002A7C80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5205657024A5AE95002A7C80 /* Build configuration list for PBXNativeTarget "BoltUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5205657124A5AE95002A7C80 /* Debug */,
+				5205657224A5AE95002A7C80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5205651024A5AE93002A7C80 /* Project object */;
+}
