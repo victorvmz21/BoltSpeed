@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  Bolt
+
+  Created by Victor Monteiro on 8/3/20.
+  Copyright © 2020 Atomuz. All rights reserved.
+*/
+
+//this is the list tableView message when is empty
+"Welcome" = "Bem - Vindo"
+"No Speed Track Recorded Yet" = "Você não tem nenhuma gravacão ainda."
+"Refresh Screen" = "Atualizar"
+
+ 
+"New Speed Track" = "Velocidade Gravada!"
+"Speed Track Created Successfully" = "Recorde de velocidade Criado com Sucesso."
+
+//Error
+"Error" = "Erro"
+"Couldn't Record a Speed Track, Try again!" = "Não Foi Possivel Gravar Velocidade, tente novamente!"
