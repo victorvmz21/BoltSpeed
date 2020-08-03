@@ -6,7 +6,7 @@
 	<string>development</string>
 	<key>com.apple.developer.icloud-container-identifiers</key>
 	<array>
-		<string>iCloud.com.atomuz.Bolt-Speed</string>
+		<string>iCloud.io.atomuz.Bolt-Speed</string>
 	</array>
 	<key>com.apple.developer.icloud-services</key>
 	<array>
