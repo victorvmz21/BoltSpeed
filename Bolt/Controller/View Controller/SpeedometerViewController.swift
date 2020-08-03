@@ -38,6 +38,8 @@ class SpeedometerViewController: UIViewController {
     var averageSpeed: String = ""
     var totalTime: String = ""
     var totalMiles: String = ""
+    let alertTitle = NSLocalizedString("New Speed Track", comment: "")
+    let alertMessage = NSLocalizedString("Speed Track Created Successfully", comment: "")
     
     //MARK: - View Life Cycle
     override func viewDidLoad() {
@@ -233,7 +235,7 @@ extension SpeedometerViewController: CLLocationManagerDelegate {
                         switch result {
                         case .success(let speedTrack):
                             DispatchQueue.main.async {
-                                self.presentAlert(alertType: .alert, title: "New Speed Track", message: "Speed Track created successfully!")
+                                self.presentAlert(alertType: .alert, title: self.alertTitle, message: self.alertMessage)
                             }
                             SpeedTrackController.shared.speedTrackers.insert(speedTrack, at: 0)
                         case .failure(let error):

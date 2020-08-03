@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,6 +31,7 @@
 		523BEBB324CF92EA001CCCA0 /* CLLocationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523BEBB224CF92EA001CCCA0 /* CLLocationExtension.swift */; };
 		525E0DFF24D7411600EC2748 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E0DFE24D7411600EC2748 /* ViewControllerExtension.swift */; };
 		525E0E0324D757A900EC2748 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 525E0E0124D757A900EC2748 /* UIScrollView+EmptyDataSet.m */; };
+		5272F45F24D8674000D44C55 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5272F46124D8674000D44C55 /* Localizable.strings */; };
 		529DBD1324B1876800D64FE7 /* Aero.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 529DBD1224B1876800D64FE7 /* Aero.ttf */; };
 		529DBD1424B1876800D64FE7 /* Aero.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 529DBD1224B1876800D64FE7 /* Aero.ttf */; };
 		52A7EE9624A5BE6400624202 /* CustomDashedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A7EE9524A5BE6400624202 /* CustomDashedView.swift */; };
@@ -143,6 +144,11 @@
 		525E0E0024D757A800EC2748 /* Bolt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bolt-Bridging-Header.h"; sourceTree = "<group>"; };
 		525E0E0124D757A900EC2748 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
 		525E0E0224D757A900EC2748 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
+		5272F45C24D8673700D44C55 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
+		5272F45D24D8673700D44C55 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		5272F45E24D8673700D44C55 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Interface.strings"; sourceTree = "<group>"; };
+		5272F46024D8674000D44C55 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		5272F46424D86FA000D44C55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		529DBD1124B1060F00D64FE7 /* Bolt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bolt.entitlements; sourceTree = "<group>"; };
 		529DBD1224B1876800D64FE7 /* Aero.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aero.ttf; sourceTree = "<group>"; };
 		52A7EE9524A5BE6400624202 /* CustomDashedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDashedView.swift; sourceTree = "<group>"; };
@@ -297,6 +303,7 @@
 		5205657324A5AE9F002A7C80 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5272F45924D866C000D44C55 /* Localized Strings */,
 				529DBD1524B1876D00D64FE7 /* Font */,
 				5205651B24A5AE93002A7C80 /* AppDelegate.swift */,
 				5205651D24A5AE93002A7C80 /* SceneDelegate.swift */,
@@ -426,6 +433,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		5272F45924D866C000D44C55 /* Localized Strings */ = {
+			isa = PBXGroup;
+			children = (
+				5272F46124D8674000D44C55 /* Localizable.strings */,
+			);
+			path = "Localized Strings";
+			sourceTree = "<group>";
+		};
 		529DBD1524B1876D00D64FE7 /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -464,7 +479,6 @@
 				8013CF7CF66E09A5B611CC8E /* Pods-BoltTests.debug.xcconfig */,
 				B82B9CBCED03326E4983ED17 /* Pods-BoltTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -605,6 +619,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 5205650F24A5AE93002A7C80;
 			productRefGroup = 5205651924A5AE93002A7C80 /* Products */;
@@ -626,6 +641,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52B3894C24C63ED300598456 /* Colors.xcassets in Resources */,
+				5272F45F24D8674000D44C55 /* Localizable.strings in Resources */,
 				5205652824A5AE94002A7C80 /* LaunchScreen.storyboard in Resources */,
 				5205652524A5AE94002A7C80 /* Assets.xcassets in Resources */,
 				5205652324A5AE93002A7C80 /* Main.storyboard in Resources */,
@@ -894,6 +910,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5205652224A5AE93002A7C80 /* Base */,
+				5272F45C24D8673700D44C55 /* pt-BR */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -902,6 +919,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5205652724A5AE94002A7C80 /* Base */,
+				5272F45D24D8673700D44C55 /* pt-BR */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -910,8 +928,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				5205654824A5AE94002A7C80 /* Base */,
+				5272F45E24D8673700D44C55 /* pt-BR */,
 			);
 			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		5272F46124D8674000D44C55 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5272F46024D8674000D44C55 /* pt-BR */,
+				5272F46424D86FA000D44C55 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -921,6 +949,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -981,6 +1010,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

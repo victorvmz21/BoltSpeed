@@ -6,15 +6,25 @@
   Copyright © 2020 Atomuz. All rights reserved.
 */
 
-//this is the list tableView message when is empty
-"Welcome" = "Bem - Vindo"
-"No Speed Track Recorded Yet" = "Você não tem nenhuma gravacão ainda."
-"Refresh Screen" = "Atualizar"
+//This is the list tableView message when is empty
+"Welcome" = "Welcome";
+"No Speed Track Recorded Yet" = "No Speed Track Recorded Yet.";
+"Refresh Screen" = "Refresh Screen";
 
- 
-"New Speed Track" = "Velocidade Gravada!"
-"Speed Track Created Successfully" = "Recorde de velocidade Criado com Sucesso."
+ //Alert Speed track created Successfully
+"New Speed Track" = "New Speed Track";
+"Speed Track Created Successfully" = "Speed Track Created Successfully.";
 
 //Error
-"Error" = "Erro"
-"Couldn't Record a Speed Track, Try again!" = "Não Foi Possivel Gravar Velocidade, tente novamente!"
+"Error" = "Error";
+"Couldn't Record a Speed Track, Try again!" = "Couldn't Record a Speed Track, Try again!";
+
+//Detail Screen
+"Start Point" = "Start Point";
+"Destination" = "Destination";
+"Date" = "Date";
+"Time" = "Time";
+"Distance" = "Distance";
+"Avg Speed" = "Avg Speed";
+
+

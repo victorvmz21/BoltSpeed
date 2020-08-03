@@ -657,6 +657,12 @@
                         <outlet property="averageSpeedView" destination="Exd-PQ-v6t" id="6yI-G3-nJI"/>
                         <outlet property="backgrondView" destination="8eR-W4-snS" id="DS7-Uf-yH9"/>
                         <outlet property="destinationLabel" destination="js1-Va-faH" id="9QS-hX-bKS"/>
+                        <outlet property="keyAverageSpeedLabel" destination="dSq-ew-jyu" id="3gG-cY-5iA"/>
+                        <outlet property="keyDateLabel" destination="TMe-0P-68d" id="3DK-v1-5af"/>
+                        <outlet property="keyDestinationLabel" destination="UwI-Bw-Wkj" id="E9k-1O-ze8"/>
+                        <outlet property="keyDistanceLabel" destination="KOz-0Q-49u" id="DP9-OI-Szy"/>
+                        <outlet property="keyStartPointLabel" destination="ch1-nY-kdA" id="f2j-eq-crP"/>
+                        <outlet property="keyTimeLabel" destination="PJd-7f-99i" id="OdH-Yx-Vmk"/>
                         <outlet property="mapView" destination="WUc-1U-w2J" id="HUH-rh-FFS"/>
                         <outlet property="speedLimitExceededLabel" destination="A4v-Gj-n8a" id="IHB-ha-o53"/>
                         <outlet property="startPointLabel" destination="ghs-TE-Vu8" id="vwh-iQ-osX"/>

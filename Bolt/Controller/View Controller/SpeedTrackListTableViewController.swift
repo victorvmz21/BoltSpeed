@@ -15,6 +15,9 @@ class SpeedTrackListTableViewController: UITableViewController {
     var reusableIdentifier = "speedTrackCell"
     var segueIdentifier = "toDetailScreen"
     var refresher: UIRefreshControl = UIRefreshControl()
+    let emptyListTitle = NSLocalizedString("Welcome", comment: "")
+    let emptyListDescription = NSLocalizedString("No Speed Track Recorded Yet", comment: "")
+    let emptyListRefreshButtonTitle = NSLocalizedString("Refresh Screen", comment: "")
     
     //MARK: - View Life Cycle
     override func viewDidLoad() {
@@ -65,9 +68,10 @@ class SpeedTrackListTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "speedTrackCell", for: indexPath) as? SpeedTrackTableViewCell else { return UITableViewCell() }
-        
-        let speedTrack = SpeedTrackController.shared.speedTrackers[indexPath.row]
-        cell.speedTrack = speedTrack
+       
+        var speedTrackSorted: [SpeedTrack] = []
+        speedTrackSorted =  SpeedTrackController.shared.speedTrackers.sorted(by: { $0.timeStamp > $1.timeStamp })
+        cell.speedTrack =  speedTrackSorted[indexPath.row]
         
         return cell
     }
@@ -79,7 +83,10 @@ class SpeedTrackListTableViewController: UITableViewController {
             SpeedTrackController.shared.delete(speedTrack: speedTrackToDelete) { (result) in
                 switch result {
                 case .success(_):
-                    DispatchQueue.main.async { tableView.deleteRows(at: [indexPath], with: .fade)}
+                    DispatchQueue.main.async {
+                        tableView.deleteRows(at: [indexPath], with: .fade)
+                        self.updateViews()
+                    }
                 case .failure(let error):
                     print(error.localizedDescription)
                 }
@@ -101,13 +108,13 @@ class SpeedTrackListTableViewController: UITableViewController {
 extension SpeedTrackListTableViewController: DZNEmptyDataSetSource, DZNEmptyDataSetDelegate {
     
     func title(forEmptyDataSet scrollView: UIScrollView) -> NSAttributedString? {
-        let str = "Welcome"
+        let str = emptyListTitle
         let attrs = [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .headline)]
         return NSAttributedString(string: str, attributes: attrs)
     }
     
     func description(forEmptyDataSet scrollView: UIScrollView) -> NSAttributedString? {
-        let str = "No Speed track recorded yet."
+        let str = emptyListDescription
         let attrs = [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .body)]
         return NSAttributedString(string: str, attributes: attrs)
     }
@@ -117,7 +124,7 @@ extension SpeedTrackListTableViewController: DZNEmptyDataSetSource, DZNEmptyData
     }
     
     func buttonTitle(forEmptyDataSet scrollView: UIScrollView, for state: UIControl.State) -> NSAttributedString? {
-        let str = "Refresh Screen"
+        let str = emptyListRefreshButtonTitle
         let attrs = [NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .callout)]
         return NSAttributedString(string: str, attributes: attrs)
     }
