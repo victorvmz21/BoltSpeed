@@ -23,9 +23,21 @@ class TrackSpeedDetailViewController: UIViewController {
     @IBOutlet weak var averageSpeedLabel: UILabel!
     @IBOutlet weak var totalTimeLabel: UILabel!
     @IBOutlet weak var totalMilesLabel: UILabel!
+    @IBOutlet weak var keyStartPointLabel: UILabel!
+    @IBOutlet weak var keyDestinationLabel: UILabel!
+    @IBOutlet weak var keyDateLabel: UILabel!
+    @IBOutlet weak var keyDistanceLabel: UILabel!
+    @IBOutlet weak var keyTimeLabel: UILabel!
+    @IBOutlet weak var keyAverageSpeedLabel: UILabel!
     
     //MARK: - Variables
     var speedTrack: SpeedTrack?
+    let StartPointTitleKey = NSLocalizedString("Start Point", comment: "")
+    let destinationTitleKey = NSLocalizedString("Destination", comment: "")
+    let dateTitleKey = NSLocalizedString("Date", comment: "")
+    let distanceTitleKey = NSLocalizedString("Distance", comment: "")
+    let timeTitleKey = NSLocalizedString("Time", comment: "")
+    let averageSpeedTitleKey = NSLocalizedString("Avg Speed", comment: "")
     
     //MARK: - View Life Cycle
     override func viewDidLoad() {
@@ -42,6 +54,13 @@ class TrackSpeedDetailViewController: UIViewController {
         averageSpeedView.roundViewWith(proportion: 12)
         timeTraveledView.roundViewWith(proportion: 12)
         totalMilesView.roundViewWith(proportion: 12)
+        
+        keyStartPointLabel.text = StartPointTitleKey
+        keyDestinationLabel.text = destinationTitleKey
+        keyDateLabel.text = dateTitleKey
+        keyDistanceLabel.text = distanceTitleKey
+        keyTimeLabel.text = timeTitleKey
+        keyAverageSpeedLabel.text = averageSpeedTitleKey
     }
     
     func updateViews() {

@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "0"; ObjectID = "3PY-pP-JGi"; */
+"3PY-pP-JGi.text" = "0";
+
+/* Class = "UINavigationItem"; title = "Timpanogos"; ObjectID = "90t-8y-nWL"; */
+"90t-8y-nWL.title" = "Timpanogos";
+
+/* Class = "UIButton"; normalTitle = "Rec"; ObjectID = "Ovk-9b-7dn"; */
+"Ovk-9b-7dn.normalTitle" = "Rec";
+
+/* Class = "UINavigationItem"; title = "Speed"; ObjectID = "VTS-b1-0Sl"; */
+"VTS-b1-0Sl.title" = "Velocidade";
+
+/* Class = "UINavigationItem"; title = "Speed Track"; ObjectID = "feQ-gc-6C2"; */
+"feQ-gc-6C2.title" = "Gravações";
+
+/* Class = "UILabel"; text = "21/12/2020"; ObjectID = "gfq-NT-xSm"; */
+"gfq-NT-xSm.text" = "21/12/2020";
+
+/* Class = "UILabel"; text = "Recording"; ObjectID = "i9W-r6-fk1"; */
+"i9W-r6-fk1.text" = "Gravando";
+
+/* Class = "UIButton"; normalTitle = "MP/H"; ObjectID = "nUV-cg-v34"; */
+"nUV-cg-v34.normalTitle" = "MPH";
+
+/* Class = "UILabel"; text = "Timpanogos"; ObjectID = "rUw-pt-raE"; */
+"rUw-pt-raE.text" = "Destino";
