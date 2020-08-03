@@ -21,6 +21,8 @@ class SpeedTrackController {
     var speed: [CLLocationSpeed] = []
     var sourceLocationName = ""
     var destinationLocationName = ""
+    let pinStartPointTitle = NSLocalizedString("Start Point", comment: "")
+    let pinDestinationTitle = NSLocalizedString("Destination", comment: "")
     
     //MARK: - Private Data base
     let privateDB = CKContainer.default().privateCloudDatabase
@@ -115,9 +117,9 @@ class SpeedTrackController {
         destinationAnnotation.coordinate = destinationPointCoordinate
         
         //Adding Title to Pins Annotation
-        sourceAnnotation.title = "Start Point"
+        sourceAnnotation.title = pinStartPointTitle
         sourceAnnotation.subtitle = "Lat: \(startPointCoordinate.latitude) Long: \(startPointCoordinate.longitude)"
-        destinationAnnotation.title = "Destination"
+        destinationAnnotation.title = pinDestinationTitle
         destinationAnnotation.subtitle = "Lat: \(destinationPointCoordinate.latitude) Long: \(destinationPointCoordinate.longitude)"
         
         //Adding pins into map

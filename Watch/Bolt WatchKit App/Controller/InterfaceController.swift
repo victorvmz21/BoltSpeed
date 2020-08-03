@@ -75,6 +75,5 @@ extension InterfaceController: CLLocationManagerDelegate {
             speedLabel.setText("\(Int(speed))")
             print(Int(speed))
         }
-        
     }
 }

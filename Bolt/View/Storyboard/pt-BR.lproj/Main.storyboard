@@ -13,7 +13,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Speed-->
+        <!--Velocidade-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SpeedometerViewController" customModule="Bolt" customModuleProvider="target" sceneMemberID="viewController">
@@ -162,14 +162,14 @@
                                     <action selector="recordButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ICk-ME-bZ0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9W-r6-fk1">
-                                <rect key="frame" x="156" y="118" width="102.33333333333331" height="16.666666666666657"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gravando" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9W-r6-fk1">
+                                <rect key="frame" x="158.33333333333334" y="118" width="97.666666666666657" height="17"/>
                                 <fontDescription key="fontDescription" name="Aero" family="Aero" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="efM-O4-xah">
-                                <rect key="frame" x="136" y="120.33333333333333" width="12" height="11.999999999999986"/>
+                                <rect key="frame" x="138.33333333333334" y="120.66666666666667" width="12" height="12.000000000000014"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="12" id="AFg-57-cdZ"/>
@@ -191,7 +191,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Speed" largeTitleDisplayMode="always" id="VTS-b1-0Sl"/>
+                    <navigationItem key="navigationItem" title="Velocidade" largeTitleDisplayMode="always" id="VTS-b1-0Sl"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
                     </userDefinedRuntimeAttributes>
@@ -213,7 +213,7 @@
             </objects>
             <point key="canvasLocation" x="2862.3188405797105" y="138.61607142857142"/>
         </scene>
-        <!--Speed Track-->
+        <!--Gravações-->
         <scene sceneID="zFD-vQ-oep">
             <objects>
                 <tableViewController id="aZC-ae-up0" customClass="SpeedTrackListTableViewController" customModule="Bolt" customModuleProvider="target" sceneMemberID="viewController">
@@ -287,7 +287,7 @@
                             <outlet property="delegate" destination="aZC-ae-up0" id="eKL-Oo-Qhj"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Speed Track" largeTitleDisplayMode="always" id="feQ-gc-6C2"/>
+                    <navigationItem key="navigationItem" title="Gravações" largeTitleDisplayMode="always" id="feQ-gc-6C2"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Shh-wd-pxn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -302,34 +302,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8eR-W4-snS">
-                                <rect key="frame" x="20" y="384.66666666666674" width="374" height="408.33333333333326"/>
+                                <rect key="frame" x="20" y="391.66666666666674" width="374" height="401.33333333333326"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Dvy-2l-TfQ" userLabel="Global StackView">
-                                        <rect key="frame" x="10" y="10" width="354" height="388.33333333333331"/>
+                                        <rect key="frame" x="10" y="10" width="354" height="381.33333333333331"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bBW-eC-GA1" userLabel="Top Content">
-                                                <rect key="frame" x="0.0" y="0.0" width="354" height="300.33333333333331"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="294.66666666666669"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="7Cn-kw-Wym" userLabel="Start Point">
-                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="94.666666666666671"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="354" height="93"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5wW-H2-ngq">
-                                                                <rect key="frame" x="0.0" y="26.666666666666632" width="43.666666666666664" height="42.333333333333329"/>
+                                                                <rect key="frame" x="0.0" y="25.666666666666632" width="43.666666666666664" height="42.333333333333329"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="43.670000000000002" id="7DC-9c-Vyl"/>
                                                                     <constraint firstAttribute="width" constant="43.670000000000002" id="aMu-o7-tRv"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="iRS-3E-p0D">
-                                                                <rect key="frame" x="58.666666666666657" y="18" width="295.33333333333337" height="59"/>
+                                                                <rect key="frame" x="58.666666666666657" y="17" width="295.33333333333337" height="59"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ch1-nY-kdA">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ch1-nY-kdA">
                                                                         <rect key="frame" x="0.0" y="0.0" width="295.33333333333331" height="28"/>
                                                                         <attributedString key="attributedText">
-                                                                            <fragment content="Start Point:">
+                                                                            <fragment content="Início">
                                                                                 <attributes>
                                                                                     <color key="NSColor" red="0.99607843137254903" green="1" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                     <font key="NSFont" size="24" name="Aero"/>
+                                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                                 </attributes>
                                                                             </fragment>
                                                                         </attributedString>
@@ -352,25 +353,26 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="NYf-3G-g9E" userLabel="Destination">
-                                                        <rect key="frame" x="0.0" y="102.66666666666663" width="354" height="95"/>
+                                                        <rect key="frame" x="0.0" y="101" width="354" height="92.666666666666686"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gz3-fC-mNc">
-                                                                <rect key="frame" x="0.0" y="26.666666666666689" width="43.666666666666664" height="42.333333333333329"/>
+                                                                <rect key="frame" x="0.0" y="25.666666666666689" width="43.666666666666664" height="42.333333333333329"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="43.670000000000002" id="8Id-xs-nYh"/>
                                                                     <constraint firstAttribute="width" constant="43.670000000000002" id="Z7z-WT-vlY"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="37J-CT-p19">
-                                                                <rect key="frame" x="58.666666666666657" y="18.000000000000057" width="295.33333333333337" height="59"/>
+                                                                <rect key="frame" x="58.666666666666657" y="16.999999999999943" width="295.33333333333337" height="59"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UwI-Bw-Wkj">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UwI-Bw-Wkj">
                                                                         <rect key="frame" x="0.0" y="0.0" width="295.33333333333331" height="28"/>
                                                                         <attributedString key="attributedText">
-                                                                            <fragment content="Destination:">
+                                                                            <fragment content="Destino">
                                                                                 <attributes>
                                                                                     <color key="NSColor" name="primaryText"/>
                                                                                     <font key="NSFont" size="24" name="Aero"/>
+                                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                                 </attributes>
                                                                             </fragment>
                                                                         </attributedString>
@@ -435,25 +437,26 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="LNK-bc-tN5" userLabel="Date">
-                                                        <rect key="frame" x="0.0" y="205.66666666666669" width="354" height="94.666666666666686"/>
+                                                        <rect key="frame" x="0.0" y="201.66666666666669" width="354" height="93"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="OIA-Sx-ObK">
-                                                                <rect key="frame" x="0.0" y="26.333333333333261" width="43.666666666666664" height="42.333333333333329"/>
+                                                                <rect key="frame" x="0.0" y="25.666666666666632" width="43.666666666666664" height="42.333333333333329"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="43.670000000000002" id="Vwn-Vo-YdL"/>
                                                                     <constraint firstAttribute="height" constant="43.670000000000002" id="hWe-YL-8mz"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="ZKu-v5-9gb">
-                                                                <rect key="frame" x="58.666666666666657" y="22.333333333333254" width="295.33333333333337" height="49.666666666666657"/>
+                                                                <rect key="frame" x="58.666666666666657" y="21.666666666666625" width="295.33333333333337" height="49.666666666666657"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TMe-0P-68d">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="57" height="28"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMe-0P-68d">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="50.333333333333336" height="28"/>
                                                                         <attributedString key="attributedText">
-                                                                            <fragment content="Date:">
+                                                                            <fragment content="Data">
                                                                                 <attributes>
                                                                                     <color key="NSColor" name="primaryText"/>
                                                                                     <font key="NSFont" size="24" name="Aero"/>
+                                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                                 </attributes>
                                                                             </fragment>
                                                                         </attributedString>
@@ -483,10 +486,10 @@
                                                 </variation>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="QRQ-oC-zew" userLabel="Bottom Content">
-                                                <rect key="frame" x="0.0" y="310.33333333333331" width="354" height="78"/>
+                                                <rect key="frame" x="0.0" y="304.66666666666669" width="354" height="76.666666666666686"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Exd-PQ-v6t" userLabel="AverageSpeedView">
-                                                        <rect key="frame" x="0.0" y="0.66666666666662877" width="108.66666666666667" height="76.666666666666671"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="108.66666666666667" height="76.666666666666671"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="AAA-8s-Oey">
                                                                 <rect key="frame" x="5" y="5" width="98.666666666666671" height="66.666666666666671"/>
@@ -494,7 +497,7 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dSq-ew-jyu">
                                                                         <rect key="frame" x="0.0" y="0.0" width="98.666666666666671" height="30.333333333333332"/>
                                                                         <attributedString key="attributedText">
-                                                                            <fragment content="Avg Speed">
+                                                                            <fragment content="Velo Média">
                                                                                 <attributes>
                                                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                     <font key="NSFont" size="14" name="Aero"/>
@@ -505,7 +508,7 @@
                                                                         <color key="highlightedColor" red="0.99607843139999996" green="1" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RfH-W5-7mg">
-                                                                        <rect key="frame" x="0.0" y="36.333333333333371" width="98.666666666666671" height="30.333333333333329"/>
+                                                                        <rect key="frame" x="0.0" y="36.333333333333258" width="98.666666666666671" height="30.333333333333329"/>
                                                                         <attributedString key="attributedText">
                                                                             <fragment content="240">
                                                                                 <attributes>
@@ -529,7 +532,7 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lOT-JG-OHB" userLabel="TimeTraveledView">
-                                                        <rect key="frame" x="122.66666666666666" y="2.3333333333333712" width="108.66666666666666" height="73.666666666666671"/>
+                                                        <rect key="frame" x="122.66666666666666" y="1.6666666666666288" width="108.66666666666666" height="73.666666666666671"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Y0f-ey-75E">
                                                                 <rect key="frame" x="5" y="4.9999999999999964" width="98.666666666666671" height="63.666666666666657"/>
@@ -537,7 +540,7 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PJd-7f-99i">
                                                                         <rect key="frame" x="0.0" y="0.0" width="98.666666666666671" height="29.333333333333332"/>
                                                                         <attributedString key="attributedText">
-                                                                            <fragment content="Time">
+                                                                            <fragment content="Tempo">
                                                                                 <attributes>
                                                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                     <font key="NSFont" size="14" name="Aero"/>
@@ -548,7 +551,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nDy-a8-Lw3">
-                                                                        <rect key="frame" x="0.0" y="34.333333333333258" width="98.666666666666671" height="29.333333333333329"/>
+                                                                        <rect key="frame" x="0.0" y="34.333333333333371" width="98.666666666666671" height="29.333333333333329"/>
                                                                         <attributedString key="attributedText">
                                                                             <fragment content="11h30">
                                                                                 <attributes>
@@ -572,7 +575,7 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ed8-Qo-hCG" userLabel="TimeTraveledView">
-                                                        <rect key="frame" x="245.33333333333329" y="3.3333333333333712" width="108.66666666666666" height="71.666666666666671"/>
+                                                        <rect key="frame" x="245.33333333333329" y="2.6666666666666288" width="108.66666666666666" height="71.666666666666671"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Tf2-1c-MMf">
                                                                 <rect key="frame" x="5" y="4.9999999999999964" width="98.666666666666671" height="61.666666666666657"/>
@@ -580,7 +583,7 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KOz-0Q-49u">
                                                                         <rect key="frame" x="0.0" y="0.0" width="98.666666666666671" height="28.333333333333332"/>
                                                                         <attributedString key="attributedText">
-                                                                            <fragment content="Distance">
+                                                                            <fragment content="Distância">
                                                                                 <attributes>
                                                                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                     <font key="NSFont" size="14" name="Aero"/>
@@ -591,7 +594,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K8D-PR-cNs">
-                                                                        <rect key="frame" x="0.0" y="33.333333333333258" width="98.666666666666671" height="28.333333333333329"/>
+                                                                        <rect key="frame" x="0.0" y="33.333333333333371" width="98.666666666666671" height="28.333333333333329"/>
                                                                         <attributedString key="attributedText">
                                                                             <fragment content="240">
                                                                                 <attributes>
@@ -633,7 +636,7 @@
                                 </constraints>
                             </view>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="WUc-1U-w2J">
-                                <rect key="frame" x="20" y="148" width="374" height="216"/>
+                                <rect key="frame" x="20" y="155" width="374" height="216"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="WUc-1U-w2J" secondAttribute="height" multiplier="187:108" id="Wc0-my-W7C"/>
                                 </constraints>
@@ -657,12 +660,6 @@
                         <outlet property="averageSpeedView" destination="Exd-PQ-v6t" id="6yI-G3-nJI"/>
                         <outlet property="backgrondView" destination="8eR-W4-snS" id="DS7-Uf-yH9"/>
                         <outlet property="destinationLabel" destination="js1-Va-faH" id="9QS-hX-bKS"/>
-                        <outlet property="keyAverageSpeedLabel" destination="dSq-ew-jyu" id="3gG-cY-5iA"/>
-                        <outlet property="keyDateLabel" destination="TMe-0P-68d" id="3DK-v1-5af"/>
-                        <outlet property="keyDestinationLabel" destination="UwI-Bw-Wkj" id="E9k-1O-ze8"/>
-                        <outlet property="keyDistanceLabel" destination="KOz-0Q-49u" id="DP9-OI-Szy"/>
-                        <outlet property="keyStartPointLabel" destination="ch1-nY-kdA" id="f2j-eq-crP"/>
-                        <outlet property="keyTimeLabel" destination="PJd-7f-99i" id="OdH-Yx-Vmk"/>
                         <outlet property="mapView" destination="WUc-1U-w2J" id="HUH-rh-FFS"/>
                         <outlet property="speedLimitExceededLabel" destination="A4v-Gj-n8a" id="IHB-ha-o53"/>
                         <outlet property="startPointLabel" destination="ghs-TE-Vu8" id="vwh-iQ-osX"/>
