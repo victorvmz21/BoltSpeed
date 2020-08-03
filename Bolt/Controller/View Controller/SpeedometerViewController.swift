@@ -11,6 +11,7 @@ import MapKit
 import CoreLocation
 import CoreMotion
 import AVFoundation
+import NotificationCenter
 
 class SpeedometerViewController: UIViewController {
     
@@ -45,7 +46,13 @@ class SpeedometerViewController: UIViewController {
         settingUpViews()
         settingSpeedType()
         
+        
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(enterForeground),
+                                               name: UIApplication.willEnterForegroundNotification,
+                                               object: nil)
     }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -53,7 +60,15 @@ class SpeedometerViewController: UIViewController {
         self.recordingLabel.alpha = 0
         recordingAnimation()
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(self, selector: #selector(enterForeground), name: UIApplication.willEnterForegroundNotification, object: nil)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self, name: UIApplication.willEnterForegroundNotification, object: nil)
+    }
+    
     //MARK: - IBActions
     @IBAction func speedTypeButtonTapped(_ sender: UIButton) {
         isMPH = !isMPH
@@ -125,11 +140,17 @@ class SpeedometerViewController: UIViewController {
         }
     }
     
-    func voiceNotification() {
-        let synthesizer = AVSpeechSynthesizer()
-        let utterance = AVSpeechUtterance(string: "Recording Initialized")
-        synthesizer.speak(utterance)
+    @objc func enterForeground() {
+        self.recordingRedView.alpha = 0
+        self.recordingLabel.alpha = 0
+        recordingAnimation()
     }
+    
+    //    func voiceNotification() {
+    //        let synthesizer = AVSpeechSynthesizer()
+    //        let utterance = AVSpeechUtterance(string: "Recording Initialized")
+    //        synthesizer.speak(utterance)
+    //    }
 }
 
 //MARK: Extension
@@ -144,12 +165,12 @@ extension SpeedometerViewController: CLLocationManagerDelegate {
         speed = speed * speedMultiplier
         
         //Validating Speed
-        if speed < 0  {
+        if speed <= 0  {
             speedLabel.text = "0"
         }  else if speed > 240 {
             speedLabel.text = "240"
         } else {
-            speedLabel.text = "\(Int(speed))"
+            speedLabel.text = "\(Int(speed + 1))"
         }
         
         if isFinishedRecording {
@@ -197,7 +218,7 @@ extension SpeedometerViewController: CLLocationManagerDelegate {
                     } else {
                         self.totalMiles = String(format: "%.0f", distance / 1000.0) + " km"
                     }
-                                        
+                    
                     if self.totalMiles == "0 mi" {
                         self.averageSpeed = "0"
                     } else if self.totalMiles == "0 km" {
@@ -205,16 +226,16 @@ extension SpeedometerViewController: CLLocationManagerDelegate {
                     } else {
                         self.averageSpeed = String(format: "%.0f", averageSpeed.rounded())
                     }
-                                        
+                    
                     //Creating New Speed Track
                     SpeedTrackController.shared.createSpeedTrackerWith(startLocationName: SpeedTrackController.shared.sourceLocationName, destinationLocationName: SpeedTrackController.shared.destinationLocationName, initialLocation: firstLocation, finalLocation: lastLocation, averageSpeed: self.averageSpeed, timeTraveled: self.totalTime, totalMiles: self.totalMiles ) { (result) in
                         
                         switch result {
                         case .success(let speedTrack):
-                            SpeedTrackController.shared.speedTrackers.insert(speedTrack, at: 0)
                             DispatchQueue.main.async {
                                 self.presentAlert(alertType: .alert, title: "New Speed Track", message: "Speed Track created successfully!")
                             }
+                            SpeedTrackController.shared.speedTrackers.insert(speedTrack, at: 0)
                         case .failure(let error):
                             print("Error trying to create a new speed track - \(error.localizedDescription)")
                             DispatchQueue.main.async {

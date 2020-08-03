@@ -45,7 +45,6 @@ class SpeedTrackController {
             guard let record = record, let savedSpeedTrack = SpeedTrack(ckRecord: record) else {
                 return completion(.failure(.couldNotUnwrap))
             }
-        
             completion(.success(savedSpeedTrack))
         }
     }

@@ -31,6 +31,11 @@ class SpeedTrackListTableViewController: UITableViewController {
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        updateViews()
+    }
+    
     func setupViews() {
         self.refresher.attributedTitle = NSAttributedString(string: "Pull to see new Speed Track")
         self.refresher.addTarget(self, action: #selector(loadData), for: .valueChanged)
