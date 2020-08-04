@@ -85,7 +85,9 @@ class SpeedTrackListTableViewController: UITableViewController {
                 case .success(_):
                     DispatchQueue.main.async {
                         tableView.deleteRows(at: [indexPath], with: .fade)
-                        self.updateViews()
+                        if SpeedTrackController.shared.speedTrackers.count == 0 {
+                            self.updateViews()
+                        }
                     }
                 case .failure(let error):
                     print(error.localizedDescription)

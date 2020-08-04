@@ -16,14 +16,14 @@
             <objects>
                 <controller contentMode="scaleAspectFill" fullBounds="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Bolt_Extension">
                     <items>
-                        <group width="136" height="117" alignment="center" backgroundImage="watchBackground" contentMode="scaleAspectFill" layout="vertical" id="mke-F1-Ci9">
+                        <group width="114" height="115" alignment="center" verticalAlignment="center" backgroundImage="watchBackground" contentMode="scaleAspectFill" layout="vertical" id="mke-F1-Ci9">
                             <items>
-                                <label width="136" height="143" alignment="center" verticalAlignment="center" text="0" textAlignment="center" id="D3r-iy-3rh">
+                                <label width="112" height="115" alignment="center" verticalAlignment="center" text="0" textAlignment="center" id="D3r-iy-3rh">
                                     <fontDescription key="font" type="system" pointSize="48"/>
                                 </label>
                             </items>
                         </group>
-                        <button width="92" alignment="center" verticalAlignment="center" title="MPH" id="rgo-uA-Wfb">
+                        <button width="76" height="30" alignment="center" verticalAlignment="bottom" title="MPH" id="rgo-uA-Wfb">
                             <color key="backgroundColor" red="0.16862745100000001" green="0.6588235294" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="font" name="Aero" family="Aero" pointSize="20"/>
                             <connections>
@@ -37,7 +37,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="341"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
