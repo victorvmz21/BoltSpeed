@@ -1074,6 +1074,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.atomuz.Bolt-Speed.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "Bolt Extension";
 				SDKROOT = watchos;
@@ -1097,6 +1098,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.atomuz.Bolt-Speed.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "Bolt Extension";
 				SDKROOT = watchos;
@@ -1119,7 +1121,7 @@
 				DEVELOPMENT_TEAM = 9P92JGZ383;
 				IBSC_MODULE = Bolt_WatchKit_Extension;
 				INFOPLIST_FILE = "Watch/Bolt WatchKit App/Resources/Info.plist";
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.atomuz.Bolt-Speed.watchkitapp";
 				PRODUCT_NAME = Bolt;
 				SDKROOT = watchos;
@@ -1142,7 +1144,7 @@
 				DEVELOPMENT_TEAM = 9P92JGZ383;
 				IBSC_MODULE = Bolt_WatchKit_Extension;
 				INFOPLIST_FILE = "Watch/Bolt WatchKit App/Resources/Info.plist";
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.atomuz.Bolt-Speed.watchkitapp";
 				PRODUCT_NAME = Bolt;
 				SDKROOT = watchos;
@@ -1168,7 +1170,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.atomuz.Bolt-Speed";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bolt/Helper+Extensions/Bolt-Bridging-Header.h";
@@ -1193,7 +1195,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.atomuz.Bolt-Speed";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bolt/Helper+Extensions/Bolt-Bridging-Header.h";

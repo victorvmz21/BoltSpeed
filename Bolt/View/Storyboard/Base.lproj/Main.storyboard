@@ -593,10 +593,10 @@
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K8D-PR-cNs">
                                                                         <rect key="frame" x="0.0" y="33.333333333333258" width="98.666666666666671" height="28.333333333333329"/>
                                                                         <attributedString key="attributedText">
-                                                                            <fragment content="240">
+                                                                            <fragment content="100.0km">
                                                                                 <attributes>
-                                                                                    <color key="NSColor" name="primaryText"/>
-                                                                                    <font key="NSFont" size="23" name="Aero"/>
+                                                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                    <font key="NSFont" size="22" name="Aero"/>
                                                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                                 </attributes>
                                                                             </fragment>

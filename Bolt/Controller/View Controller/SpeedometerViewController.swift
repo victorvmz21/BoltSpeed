@@ -172,7 +172,7 @@ extension SpeedometerViewController: CLLocationManagerDelegate {
         }  else if speed > 240 {
             speedLabel.text = "240"
         } else {
-            speedLabel.text = "\(Int(speed + 1))"
+            speedLabel.text = "\(Int(speed))"
         }
         
         if isFinishedRecording {
@@ -216,9 +216,9 @@ extension SpeedometerViewController: CLLocationManagerDelegate {
                     } else { self.totalTime =  String(format: "%.0f", minutes) + " min" }
                     
                     if UserDefaults.standard.bool(forKey: "isMPH") {
-                        self.totalMiles = String(format: "%.0f", distance * 0.00062137) + " mi"
+                        self.totalMiles = String(format: "%.1f", distance * 0.00062137) + " mi"
                     } else {
-                        self.totalMiles = String(format: "%.0f", distance / 1000.0) + " km"
+                        self.totalMiles = String(format: "%.1f", distance / 1000.0) + " km"
                     }
                     
                     if self.totalMiles == "0 mi" {
@@ -226,7 +226,7 @@ extension SpeedometerViewController: CLLocationManagerDelegate {
                     } else if self.totalMiles == "0 km" {
                         self.averageSpeed = "0"
                     } else {
-                        self.averageSpeed = String(format: "%.0f", averageSpeed.rounded())
+                        self.averageSpeed = String(format: "%.1f", averageSpeed)
                     }
                     
                     //Creating New Speed Track
