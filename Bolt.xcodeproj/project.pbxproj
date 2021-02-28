@@ -1074,7 +1074,8 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.atomuz.Bolt-Speed.watchkitapp.watchkitextension";
+				MARKETING_VERSION = 1.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.atomuz.Bolt-Speed.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "Bolt Extension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1097,7 +1098,8 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.atomuz.Bolt-Speed.watchkitapp.watchkitextension";
+				MARKETING_VERSION = 1.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.atomuz.Bolt-Speed.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "Bolt Extension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1119,8 +1121,8 @@
 				DEVELOPMENT_TEAM = 9P92JGZ383;
 				IBSC_MODULE = Bolt_WatchKit_Extension;
 				INFOPLIST_FILE = "Watch/Bolt WatchKit App/Resources/Info.plist";
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.atomuz.Bolt-Speed.watchkitapp";
+				MARKETING_VERSION = 1.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.atomuz.Bolt-Speed.watchkitapp";
 				PRODUCT_NAME = Bolt;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1142,8 +1144,8 @@
 				DEVELOPMENT_TEAM = 9P92JGZ383;
 				IBSC_MODULE = Bolt_WatchKit_Extension;
 				INFOPLIST_FILE = "Watch/Bolt WatchKit App/Resources/Info.plist";
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.atomuz.Bolt-Speed.watchkitapp";
+				MARKETING_VERSION = 1.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.atomuz.Bolt-Speed.watchkitapp";
 				PRODUCT_NAME = Bolt;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1168,8 +1170,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.atomuz.Bolt-Speed";
+				MARKETING_VERSION = 1.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.atomuz.Bolt-Speed";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bolt/Helper+Extensions/Bolt-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1193,8 +1195,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.atomuz.Bolt-Speed";
+				MARKETING_VERSION = 1.1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.atomuz.Bolt-Speed";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bolt/Helper+Extensions/Bolt-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
