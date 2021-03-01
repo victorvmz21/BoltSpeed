@@ -22,8 +22,12 @@
 	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Bolt need access to your camera</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>App need acess location to calculate your speed</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Bolt need save images in yout library</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Aero.ttf</string>

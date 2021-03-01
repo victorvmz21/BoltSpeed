@@ -56,7 +56,7 @@
 		00689CE562E8A02CE0B7E45CC3A31F0B /* Pods-Bolt-BoltUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Bolt-BoltUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		019932EBC3F07677AD5C53850331A877 /* Pods-Bolt WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bolt WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		02C03F9C138410942137AC39EDD61C6F /* Pods-Bolt WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Bolt WatchKit App-dummy.m"; sourceTree = "<group>"; };
-		05B2B43E2150C5C9903F6739ACB3253D /* Pods_BoltTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BoltTests.framework; path = "Pods-BoltTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05B2B43E2150C5C9903F6739ACB3253D /* Pods_BoltTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BoltTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C5F413A9C4FF0517D4EC7EE13FA7176 /* Pods-Bolt WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bolt WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		0C8541BF17DD8FB212F6D32F6646351E /* Pods-Bolt-BoltUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bolt-BoltUITests-Info.plist"; sourceTree = "<group>"; };
 		1445D9F7903DA8D003132DC636D0B6CD /* Pods-Bolt WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Bolt WatchKit Extension.modulemap"; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 		2A88D27C8F3542F826D6ECBB90D5C05F /* Pods-Bolt WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bolt WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
 		2AE119577A506DF66A847E4A35BA66FC /* Pods-Bolt WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bolt WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
 		2B42CB28CCCFAE73715C255C8D57B4B1 /* Pods-Bolt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bolt.debug.xcconfig"; sourceTree = "<group>"; };
-		2ECFC9C52546EB47EA04FB88FBFF55CC /* AnimatableReload.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AnimatableReload.framework; path = AnimatableReload.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2ECFC9C52546EB47EA04FB88FBFF55CC /* AnimatableReload.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnimatableReload.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31596EBC626FE29E2D38571976516806 /* Pods-Bolt WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bolt WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		35D6EB59AC5D9BCBAD4F226C822CB99F /* Pods-Bolt-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bolt-Info.plist"; sourceTree = "<group>"; };
 		3C55E05905E98A4FCBE08927016263AD /* Pods-Bolt WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Bolt WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 		4D9A3879E75CC8255AA844A163019D90 /* Pods-Bolt-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bolt-acknowledgements.plist"; sourceTree = "<group>"; };
 		545D2F791FDDCB87B722B70C7F812ACA /* Pods-Bolt-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bolt-umbrella.h"; sourceTree = "<group>"; };
 		5ADBF5E8B7047831DCFB355C966E47AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		669C7E09054BDD71F727883D079F46B2 /* Pods_Bolt_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Bolt_WatchKit_App.framework; path = "Pods-Bolt WatchKit App.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		669C7E09054BDD71F727883D079F46B2 /* Pods_Bolt_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bolt_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CCCA8368878AEFA632F49B3C90A7D4A /* AnimatableReload-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnimatableReload-prefix.pch"; sourceTree = "<group>"; };
 		75C31C764B12A4AD5B421A0DCF0A451E /* Pods-Bolt-BoltUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bolt-BoltUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7B33FEFEC5D3F459253CE254A88DF1B9 /* Pods-Bolt WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Bolt WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
@@ -87,18 +87,18 @@
 		8F747348D2E6FC58DEA600D6F20EA2AF /* Pods-BoltTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BoltTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		99CC4E1CD9C2038CE5D5154810975D7A /* Pods-BoltTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BoltTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9BFC89E546E91E6D4F4163CB85EE1E4B /* AnimatableReload-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AnimatableReload-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A034B39950B74A87802F1F14BB0B051B /* AnimatableReload-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AnimatableReload-dummy.m"; sourceTree = "<group>"; };
 		A22A445ECB58921A2D0029D7538D03B2 /* Pods-Bolt-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Bolt-dummy.m"; sourceTree = "<group>"; };
 		A39A9B7963D985A78257A7C349CB8BB8 /* Pods-Bolt-BoltUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bolt-BoltUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A5B97FBB384C4C059275954B7EA32164 /* AnimatableReload-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AnimatableReload-umbrella.h"; sourceTree = "<group>"; };
 		A8C27003925F7A270C3D341A39DD1C3D /* Pods-BoltTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BoltTests.release.xcconfig"; sourceTree = "<group>"; };
 		B6A4D994EC86B45DB81F285756B899BC /* Pods-Bolt-BoltUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Bolt-BoltUITests-umbrella.h"; sourceTree = "<group>"; };
-		B7551388EAAA38FEDF21ED1A0C8515C7 /* Pods_Bolt_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Bolt_WatchKit_Extension.framework; path = "Pods-Bolt WatchKit Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7551388EAAA38FEDF21ED1A0C8515C7 /* Pods_Bolt_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bolt_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B78AB2154531B10E44BD0031A63AACA9 /* Pods-BoltTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BoltTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BDE5A114EEFA2EB64BE147F272F773C2 /* Pods-BoltTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BoltTests-dummy.m"; sourceTree = "<group>"; };
 		BEC24ED4C11F82B91F6AE9764562969B /* Pods-Bolt WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Bolt WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
-		C255B9B37A8D8235C4936ECA047C64D5 /* Pods_Bolt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Bolt.framework; path = "Pods-Bolt.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C255B9B37A8D8235C4936ECA047C64D5 /* Pods_Bolt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bolt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2596C269C591DC56937CE9AC5306003 /* Pods-Bolt-BoltUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Bolt-BoltUITests-dummy.m"; sourceTree = "<group>"; };
 		D8257A22157082ADBA820E125E37D1F0 /* AnimatableReload.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AnimatableReload.modulemap; sourceTree = "<group>"; };
 		DA1944909AD25470C0BAD25D4A9B2BCC /* Pods-BoltTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BoltTests-umbrella.h"; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 		ED2CD5D57037F795A85D740BFCE278DD /* Pods-Bolt.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Bolt.modulemap"; sourceTree = "<group>"; };
 		EE7AF5372067CE679E230F55832E8DFC /* AnimatableReload.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AnimatableReload.debug.xcconfig; sourceTree = "<group>"; };
 		F1300C5BA37041D371591E4DECFDA7B5 /* Pods-Bolt WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Bolt WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F5D84523B7B56A96C6D60E66AFA6DA49 /* Pods_Bolt_BoltUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Bolt_BoltUITests.framework; path = "Pods-Bolt-BoltUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D84523B7B56A96C6D60E66AFA6DA49 /* Pods_Bolt_BoltUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bolt_BoltUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F940AB60CBCB368D327D337F0FC6FCAA /* Pods-Bolt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bolt.release.xcconfig"; sourceTree = "<group>"; };
 		FA87B6A7A6B74423994FDD082FB2108D /* Pods-BoltTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BoltTests.modulemap"; sourceTree = "<group>"; };
 		FC0C4065378ED96C680F2D5E30F57FC9 /* Pods-Bolt WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Bolt WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
@@ -197,7 +197,6 @@
 				21669F6754AA6AA86005ACD406A7240C /* AnimatableReload.swift */,
 				74179FC59300FE02FC3470AB27A2DE21 /* Support Files */,
 			);
-			name = AnimatableReload;
 			path = AnimatableReload;
 			sourceTree = "<group>";
 		};
@@ -514,7 +513,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1210;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -684,6 +683,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -736,7 +736,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/AnimatableReload/AnimatableReload-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/AnimatableReload/AnimatableReload-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -964,7 +964,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/AnimatableReload/AnimatableReload-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/AnimatableReload/AnimatableReload-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1010,6 +1010,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

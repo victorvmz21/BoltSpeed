@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,7 @@
 		5205652824A5AE94002A7C80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5205652624A5AE94002A7C80 /* LaunchScreen.storyboard */; };
 		5205653324A5AE94002A7C80 /* BoltTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5205653224A5AE94002A7C80 /* BoltTests.swift */; };
 		5205653E24A5AE94002A7C80 /* BoltUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5205653D24A5AE94002A7C80 /* BoltUITests.swift */; };
-		5205654324A5AE94002A7C80 /* Bolt.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5205654224A5AE94002A7C80 /* Bolt.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5205654324A5AE94002A7C80 /* Bolt.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5205654224A5AE94002A7C80 /* Bolt.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5205654924A5AE94002A7C80 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5205654724A5AE94002A7C80 /* Interface.storyboard */; };
 		5205654B24A5AE95002A7C80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5205654A24A5AE95002A7C80 /* Assets.xcassets */; };
 		5205655224A5AE95002A7C80 /* Bolt Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5205655124A5AE95002A7C80 /* Bolt Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -32,6 +32,9 @@
 		525E0DFF24D7411600EC2748 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525E0DFE24D7411600EC2748 /* ViewControllerExtension.swift */; };
 		525E0E0324D757A900EC2748 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 525E0E0124D757A900EC2748 /* UIScrollView+EmptyDataSet.m */; };
 		5272F45F24D8674000D44C55 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5272F46124D8674000D44C55 /* Localizable.strings */; };
+		5274390725EC56B100718243 /* HudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5274390525EC56B100718243 /* HudViewController.swift */; };
+		5274390825EC56B100718243 /* DashCamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5274390625EC56B100718243 /* DashCamViewController.swift */; };
+		5274394425EC5DB500718243 /* CustomViewRotationDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5274394325EC5DB500718243 /* CustomViewRotationDesignable.swift */; };
 		529DBD1324B1876800D64FE7 /* Aero.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 529DBD1224B1876800D64FE7 /* Aero.ttf */; };
 		529DBD1424B1876800D64FE7 /* Aero.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 529DBD1224B1876800D64FE7 /* Aero.ttf */; };
 		52A7EE9624A5BE6400624202 /* CustomDashedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A7EE9524A5BE6400624202 /* CustomDashedView.swift */; };
@@ -149,6 +152,9 @@
 		5272F45E24D8673700D44C55 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Interface.strings"; sourceTree = "<group>"; };
 		5272F46024D8674000D44C55 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		5272F46424D86FA000D44C55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5274390525EC56B100718243 /* HudViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudViewController.swift; sourceTree = "<group>"; };
+		5274390625EC56B100718243 /* DashCamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashCamViewController.swift; sourceTree = "<group>"; };
+		5274394325EC5DB500718243 /* CustomViewRotationDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewRotationDesignable.swift; sourceTree = "<group>"; };
 		529DBD1124B1060F00D64FE7 /* Bolt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bolt.entitlements; sourceTree = "<group>"; };
 		529DBD1224B1876800D64FE7 /* Aero.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aero.ttf; sourceTree = "<group>"; };
 		52A7EE9524A5BE6400624202 /* CustomDashedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDashedView.swift; sourceTree = "<group>"; };
@@ -339,6 +345,8 @@
 				5205657F24A5B6DD002A7C80 /* SpeedometerViewController.swift */,
 				523991F924A9B27100640C77 /* SpeedTrackListTableViewController.swift */,
 				523991FB24A9B29400640C77 /* TrackSpeedDetailViewController.swift */,
+				5274390625EC56B100718243 /* DashCamViewController.swift */,
+				5274390525EC56B100718243 /* HudViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -373,6 +381,7 @@
 				523BEBB224CF92EA001CCCA0 /* CLLocationExtension.swift */,
 				525E0DFE24D7411600EC2748 /* ViewControllerExtension.swift */,
 				525E0E0024D757A800EC2748 /* Bolt-Bridging-Header.h */,
+				5274394325EC5DB500718243 /* CustomViewRotationDesignable.swift */,
 			);
 			path = "Helper+Extensions";
 			sourceTree = "<group>";
@@ -589,7 +598,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1210;
 				ORGANIZATIONNAME = Atomuz;
 				TargetAttributes = {
 					5205651724A5AE93002A7C80 = {
@@ -841,11 +850,14 @@
 				52B3893924C4E0EA00598456 /* SpeedTrack.swift in Sources */,
 				5205658024A5B6DE002A7C80 /* SpeedometerViewController.swift in Sources */,
 				52B3894A24C6350D00598456 /* DateExtension.swift in Sources */,
+				5274390825EC56B100718243 /* DashCamViewController.swift in Sources */,
+				5274390725EC56B100718243 /* HudViewController.swift in Sources */,
 				52B3894224C55D7E00598456 /* Haptic.swift in Sources */,
 				523991FA24A9B27100640C77 /* SpeedTrackListTableViewController.swift in Sources */,
 				525E0DFF24D7411600EC2748 /* ViewControllerExtension.swift in Sources */,
 				52A7EE9624A5BE6400624202 /* CustomDashedView.swift in Sources */,
 				523BEBB324CF92EA001CCCA0 /* CLLocationExtension.swift in Sources */,
+				5274394425EC5DB500718243 /* CustomViewRotationDesignable.swift in Sources */,
 				5205651C24A5AE93002A7C80 /* AppDelegate.swift in Sources */,
 				5205651E24A5AE93002A7C80 /* SceneDelegate.swift in Sources */,
 				523991FC24A9B29400640C77 /* TrackSpeedDetailViewController.swift in Sources */,
@@ -895,6 +907,7 @@
 		};
 		5205654524A5AE94002A7C80 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 5205654124A5AE94002A7C80 /* Bolt WatchKit App */;
 			targetProxy = 5205654424A5AE94002A7C80 /* PBXContainerItemProxy */;
 		};
@@ -972,6 +985,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1033,6 +1047,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1173,6 +1188,7 @@
 				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.atomuz.Bolt-Speed";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "Bolt/Helper+Extensions/Bolt-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1198,6 +1214,7 @@
 				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.atomuz.Bolt-Speed";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "Bolt/Helper+Extensions/Bolt-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
