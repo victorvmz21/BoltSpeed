@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17156" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17035"/>
     </dependencies>
     <customFonts key="customFonts">
         <array key="Aero.ttf">
@@ -16,15 +17,15 @@
             <objects>
                 <controller contentMode="scaleAspectFill" fullBounds="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Bolt_Extension">
                     <items>
-                        <group width="114" height="115" alignment="center" verticalAlignment="center" backgroundImage="watchBackground" contentMode="scaleAspectFill" layout="vertical" id="mke-F1-Ci9">
+                        <group alignment="center" verticalAlignment="center" backgroundImage="watchBackground" contentMode="scaleAspectFill" layout="vertical" id="mke-F1-Ci9">
                             <items>
-                                <label width="112" height="115" alignment="center" verticalAlignment="center" text="0" textAlignment="center" id="D3r-iy-3rh">
-                                    <fontDescription key="font" type="system" pointSize="48"/>
+                                <label width="1" height="1" alignment="center" verticalAlignment="center" text="100" textAlignment="center" id="D3r-iy-3rh">
+                                    <fontDescription key="font" type="system" pointSize="45"/>
                                 </label>
                             </items>
                         </group>
                         <button width="76" height="30" alignment="center" verticalAlignment="bottom" title="MPH" id="rgo-uA-Wfb">
-                            <color key="backgroundColor" red="0.16862745100000001" green="0.6588235294" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.077926583590000001" green="0.57966482640000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="font" name="Aero" family="Aero" pointSize="20"/>
                             <connections>
                                 <action selector="speedTypeButtonTapped" destination="AgC-eL-Hgc" id="CMs-Zn-fGj"/>

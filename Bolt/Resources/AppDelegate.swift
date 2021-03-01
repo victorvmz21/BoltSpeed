@@ -12,9 +12,9 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { // in half a second...
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { 
             let tabBarController = UIApplication.shared.windows.first?.rootViewController as? UITabBarController
-            tabBarController?.selectedIndex = 0
+            tabBarController?.selectedIndex = 1
         }
         return true
     }

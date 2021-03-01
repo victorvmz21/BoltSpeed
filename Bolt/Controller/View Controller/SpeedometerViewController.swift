@@ -19,7 +19,7 @@ class SpeedometerViewController: UIViewController {
     @IBOutlet weak var speedometerViewOne: UIView!
     @IBOutlet weak var speedometerViewTwo: UIView!
     @IBOutlet weak var speedometerViewThree: UIView!
-    @IBOutlet weak var speedometerViewFour: UIView!
+    @IBOutlet weak var speedometerViewFour: CustomDashedView!
     @IBOutlet weak var speedLabel: UILabel!
     @IBOutlet weak var metricButton: UIButton!
     @IBOutlet weak var metricBackground: UIView!
@@ -98,14 +98,14 @@ class SpeedometerViewController: UIViewController {
         metricInsidebackground.roundView()
         recordButton.roundView()
         recordingRedView.roundView()
-        speedometerViewTwo.layer.borderColor = UIColor(red: 78/255, green: 155/255,
-                                                       blue: 190/255, alpha: 1).cgColor
+        speedometerViewTwo.layer.borderColor = UIColor.systemBlue.cgColor
         speedometerViewTwo.layer.borderWidth = 4
-        
         recordingRedView.isHidden  = true
         recordingLabel.isHidden    = true
         recordingRedView.alpha     = 0
         recordingLabel.alpha       = 0
+        self.speedometerViewFour.setNeedsDisplay()
+        
     }
     
     func settingSpeedType() {
@@ -225,7 +225,9 @@ extension SpeedometerViewController: CLLocationManagerDelegate {
                         self.averageSpeed = "0"
                     } else if self.totalMiles == "0 km" {
                         self.averageSpeed = "0"
-                    } else {
+                    } else if self.averageSpeed == "nan" {
+                        self.averageSpeed = "0"
+                    }else {
                         self.averageSpeed = String(format: "%.1f", averageSpeed)
                     }
                     
