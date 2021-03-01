@@ -1089,7 +1089,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.1.2;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.atomuz.Bolt-Speed.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "Bolt Extension";
 				SDKROOT = watchos;
@@ -1113,7 +1113,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.1.2;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.atomuz.Bolt-Speed.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "Bolt Extension";
 				SDKROOT = watchos;
@@ -1136,7 +1136,7 @@
 				DEVELOPMENT_TEAM = 9P92JGZ383;
 				IBSC_MODULE = Bolt_WatchKit_Extension;
 				INFOPLIST_FILE = "Watch/Bolt WatchKit App/Resources/Info.plist";
-				MARKETING_VERSION = 1.1.2;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.atomuz.Bolt-Speed.watchkitapp";
 				PRODUCT_NAME = Bolt;
 				SDKROOT = watchos;
@@ -1159,7 +1159,7 @@
 				DEVELOPMENT_TEAM = 9P92JGZ383;
 				IBSC_MODULE = Bolt_WatchKit_Extension;
 				INFOPLIST_FILE = "Watch/Bolt WatchKit App/Resources/Info.plist";
-				MARKETING_VERSION = 1.1.2;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.atomuz.Bolt-Speed.watchkitapp";
 				PRODUCT_NAME = Bolt;
 				SDKROOT = watchos;
