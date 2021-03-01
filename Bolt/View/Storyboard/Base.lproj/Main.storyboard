@@ -69,6 +69,7 @@
                                                     </view>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.092728443440000002" green="0.14836657049999999" blue="0.17720678449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.077926583590000001" green="0.57966482640000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstItem="NGa-Oz-DcF" firstAttribute="leading" secondItem="eJe-ma-TOt" secondAttribute="leading" constant="10" id="Nsa-0Q-Fqj"/>
                                                     <constraint firstAttribute="trailing" secondItem="NGa-Oz-DcF" secondAttribute="trailing" constant="10" id="OIU-hg-XYf"/>
@@ -78,30 +79,13 @@
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" red="0.30601221319999999" green="0.60955411199999998" blue="0.74511832" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.077926583590000001" green="0.57966482640000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="eJe-ma-TOt" secondAttribute="trailing" constant="14" id="2NC-BL-Ioa"/>
                                             <constraint firstItem="eJe-ma-TOt" firstAttribute="leading" secondItem="p6u-de-ttD" secondAttribute="leading" constant="14" id="I66-mu-Jvr"/>
                                             <constraint firstItem="eJe-ma-TOt" firstAttribute="top" secondItem="p6u-de-ttD" secondAttribute="top" constant="14" id="O1G-2u-vXf"/>
                                             <constraint firstAttribute="bottom" secondItem="eJe-ma-TOt" secondAttribute="bottom" constant="14" id="fQ5-KY-v4r"/>
                                         </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="100"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="dashWidth">
-                                                <real key="value" value="4"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="dashColor">
-                                                <color key="value" red="0.2882598341" green="0.57139438389999997" blue="0.64315027000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="dashLength">
-                                                <real key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="betweenDashesSpace">
-                                                <real key="value" value="3"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.20000000000000001" green="0.24705882352941178" blue="0.28627450980392155" alpha="0.64045994718309862" colorSpace="custom" customColorSpace="displayP3"/>
@@ -205,7 +189,7 @@
                         <outlet property="recordingLabel" destination="i9W-r6-fk1" id="HVS-y6-6QM"/>
                         <outlet property="recordingRedView" destination="efM-O4-xah" id="8BQ-BF-ISc"/>
                         <outlet property="speedLabel" destination="3PY-pP-JGi" id="ubR-5n-5RR"/>
-                        <outlet property="speedometerViewFour" destination="NGa-Oz-DcF" id="aF1-bg-4Rd"/>
+                        <outlet property="speedometerViewFour" destination="NGa-Oz-DcF" id="psR-eT-Guc"/>
                         <outlet property="speedometerViewOne" destination="FqC-YV-niw" id="sP4-rH-PRK"/>
                         <outlet property="speedometerViewThree" destination="eJe-ma-TOt" id="kHu-au-tub"/>
                         <outlet property="speedometerViewTwo" destination="p6u-de-ttD" id="UEj-29-swU"/>
@@ -236,6 +220,7 @@
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bolt.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Rf2-vr-qA1">
                                                     <rect key="frame" x="8" y="16.666666666666671" width="45" height="46"/>
+                                                    <color key="tintColor" red="0.078431372549019607" green="0.58039215686274503" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="45" id="4Vv-kX-z5V"/>
                                                         <constraint firstAttribute="height" constant="45" id="skR-ke-6f3"/>
@@ -323,30 +308,18 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="iRS-3E-p0D">
-                                                                <rect key="frame" x="58.666666666666657" y="17.333333333333318" width="295.33333333333337" height="60.333333333333343"/>
+                                                                <rect key="frame" x="58.666666666666657" y="26" width="295.33333333333337" height="43"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ch1-nY-kdA">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="295.33333333333331" height="28.666666666666668"/>
-                                                                        <attributedString key="attributedText">
-                                                                            <fragment content="Start Point:">
-                                                                                <attributes>
-                                                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                    <font key="NSFont" metaFont="system" size="24"/>
-                                                                                </attributes>
-                                                                            </fragment>
-                                                                        </attributedString>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Start Point:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ch1-nY-kdA">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="295.33333333333331" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="Aero" family="Aero" pointSize="17"/>
+                                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ghs-TE-Vu8">
-                                                                        <rect key="frame" x="0.0" y="31.666666666666686" width="295.33333333333331" height="28.666666666666671"/>
-                                                                        <attributedString key="attributedText">
-                                                                            <fragment content="Salt Lake City">
-                                                                                <attributes>
-                                                                                    <color key="NSColor" red="0.57617813350000002" green="0.57626378540000001" blue="0.5761594176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                    <font key="NSFont" metaFont="system" size="20"/>
-                                                                                </attributes>
-                                                                            </fragment>
-                                                                        </attributedString>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salt Lake City" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ghs-TE-Vu8">
+                                                                        <rect key="frame" x="0.0" y="23" width="295.33333333333331" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="Aero" family="Aero" pointSize="17"/>
+                                                                        <color key="textColor" red="0.57617813350000002" green="0.57626378540000001" blue="0.5761594176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -364,31 +337,18 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="37J-CT-p19">
-                                                                <rect key="frame" x="58.666666666666657" y="17.333333333333318" width="295.33333333333337" height="60.333333333333343"/>
+                                                                <rect key="frame" x="58.666666666666657" y="26.000000000000057" width="295.33333333333337" height="43"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UwI-Bw-Wkj">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="295.33333333333331" height="28.666666666666668"/>
-                                                                        <attributedString key="attributedText">
-                                                                            <fragment content="Destination:">
-                                                                                <attributes>
-                                                                                    <color key="NSColor" name="primaryText"/>
-                                                                                    <font key="NSFont" metaFont="system" size="24"/>
-                                                                                </attributes>
-                                                                            </fragment>
-                                                                        </attributedString>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Destination:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UwI-Bw-Wkj">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="295.33333333333331" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="Aero" family="Aero" pointSize="17"/>
+                                                                        <color key="textColor" name="primaryText"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="js1-Va-faH">
-                                                                        <rect key="frame" x="0.0" y="31.666666666666742" width="295.33333333333331" height="28.666666666666671"/>
-                                                                        <attributedString key="attributedText">
-                                                                            <fragment content="timpanogos">
-                                                                                <attributes>
-                                                                                    <color key="NSColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                    <font key="NSFont" metaFont="system" size="20"/>
-                                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                                </attributes>
-                                                                            </fragment>
-                                                                        </attributedString>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="timpanogos" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="js1-Va-faH">
+                                                                        <rect key="frame" x="0.0" y="23" width="295.33333333333331" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="Aero" family="Aero" pointSize="17"/>
+                                                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -408,28 +368,16 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="QV3-ep-tqq">
                                                                 <rect key="frame" x="58.666666666666657" y="13" width="295.33333333333337" height="43"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KC7-dx-DcN">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Speed Limit Exceeded:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KC7-dx-DcN">
                                                                         <rect key="frame" x="0.0" y="0.0" width="295.33333333333331" height="20"/>
-                                                                        <attributedString key="attributedText">
-                                                                            <fragment content="Speed Limit Exceeded:">
-                                                                                <attributes>
-                                                                                    <color key="NSColor" name="primaryText"/>
-                                                                                    <font key="NSFont" metaFont="system" size="24"/>
-                                                                                </attributes>
-                                                                            </fragment>
-                                                                        </attributedString>
+                                                                        <fontDescription key="fontDescription" name="Aero" family="Aero" pointSize="17"/>
+                                                                        <color key="textColor" name="primaryText"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A4v-Gj-n8a">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 Twice" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A4v-Gj-n8a">
                                                                         <rect key="frame" x="0.0" y="23" width="295.33333333333331" height="20"/>
-                                                                        <attributedString key="attributedText">
-                                                                            <fragment content="2 Twice">
-                                                                                <attributes>
-                                                                                    <color key="NSColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                    <font key="NSFont" metaFont="system" size="20"/>
-                                                                                </attributes>
-                                                                            </fragment>
-                                                                        </attributedString>
+                                                                        <fontDescription key="fontDescription" name="Aero" family="Aero" pointSize="17"/>
+                                                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -447,30 +395,18 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="ZKu-v5-9gb">
-                                                                <rect key="frame" x="58.666666666666657" y="21.666666666666629" width="295.33333333333337" height="51"/>
+                                                                <rect key="frame" x="58.666666666666657" y="25.666666666666629" width="295.33333333333337" height="43"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TMe-0P-68d">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="54.666666666666664" height="28.666666666666668"/>
-                                                                        <attributedString key="attributedText">
-                                                                            <fragment content="Date:">
-                                                                                <attributes>
-                                                                                    <color key="NSColor" name="primaryText"/>
-                                                                                    <font key="NSFont" metaFont="system" size="24"/>
-                                                                                </attributes>
-                                                                            </fragment>
-                                                                        </attributedString>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Date:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TMe-0P-68d">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="40.333333333333336" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="Aero" family="Aero" pointSize="17"/>
+                                                                        <color key="textColor" name="primaryText"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UP2-xQ-jsg">
-                                                                        <rect key="frame" x="0.0" y="31.666666666666629" width="131.33333333333334" height="19.333333333333329"/>
-                                                                        <attributedString key="attributedText">
-                                                                            <fragment content="7/22/20, 12:30 PM">
-                                                                                <attributes>
-                                                                                    <color key="NSColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                    <font key="NSFont" metaFont="system" size="16"/>
-                                                                                </attributes>
-                                                                            </fragment>
-                                                                        </attributedString>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="7/22/20, 12:30 PM" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UP2-xQ-jsg">
+                                                                        <rect key="frame" x="0.0" y="23" width="141.33333333333334" height="20"/>
+                                                                        <fontDescription key="fontDescription" name="Aero" family="Aero" pointSize="17"/>
+                                                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -493,30 +429,16 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="AAA-8s-Oey">
                                                                 <rect key="frame" x="5" y="5" width="98.666666666666671" height="66.666666666666671"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dSq-ew-jyu">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avg Speed" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dSq-ew-jyu">
                                                                         <rect key="frame" x="0.0" y="0.0" width="98.666666666666671" height="30.333333333333332"/>
-                                                                        <attributedString key="attributedText">
-                                                                            <fragment content="Avg Speed">
-                                                                                <attributes>
-                                                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                    <font key="NSFont" metaFont="system" size="14"/>
-                                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                                </attributes>
-                                                                            </fragment>
-                                                                        </attributedString>
+                                                                        <fontDescription key="fontDescription" name="Aero" family="Aero" pointSize="17"/>
+                                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <color key="highlightedColor" red="0.99607843139999996" green="1" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RfH-W5-7mg">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="240" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RfH-W5-7mg">
                                                                         <rect key="frame" x="0.0" y="36.333333333333371" width="98.666666666666671" height="30.333333333333329"/>
-                                                                        <attributedString key="attributedText">
-                                                                            <fragment content="240">
-                                                                                <attributes>
-                                                                                    <color key="NSColor" name="primaryText"/>
-                                                                                    <font key="NSFont" metaFont="system" size="23"/>
-                                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                                </attributes>
-                                                                            </fragment>
-                                                                        </attributedString>
+                                                                        <fontDescription key="fontDescription" name="Aero" family="Aero" pointSize="17"/>
+                                                                        <color key="textColor" name="primaryText"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -536,30 +458,16 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Y0f-ey-75E">
                                                                 <rect key="frame" x="5" y="4.9999999999999964" width="98.666666666666671" height="63.666666666666657"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PJd-7f-99i">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PJd-7f-99i">
                                                                         <rect key="frame" x="0.0" y="0.0" width="98.666666666666671" height="29.333333333333332"/>
-                                                                        <attributedString key="attributedText">
-                                                                            <fragment content="Time">
-                                                                                <attributes>
-                                                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                    <font key="NSFont" metaFont="system" size="14"/>
-                                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                                </attributes>
-                                                                            </fragment>
-                                                                        </attributedString>
+                                                                        <fontDescription key="fontDescription" name="Aero" family="Aero" pointSize="17"/>
+                                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nDy-a8-Lw3">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11h30" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nDy-a8-Lw3">
                                                                         <rect key="frame" x="0.0" y="34.333333333333258" width="98.666666666666671" height="29.333333333333329"/>
-                                                                        <attributedString key="attributedText">
-                                                                            <fragment content="11h30">
-                                                                                <attributes>
-                                                                                    <color key="NSColor" name="primaryText"/>
-                                                                                    <font key="NSFont" metaFont="system" size="23"/>
-                                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                                </attributes>
-                                                                            </fragment>
-                                                                        </attributedString>
+                                                                        <fontDescription key="fontDescription" name="Aero" family="Aero" pointSize="17"/>
+                                                                        <color key="textColor" name="primaryText"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
@@ -574,35 +482,21 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ed8-Qo-hCG" userLabel="TimeTraveledView">
-                                                        <rect key="frame" x="245.33333333333329" y="3.3333333333333712" width="108.66666666666666" height="71.666666666666671"/>
+                                                        <rect key="frame" x="245.33333333333329" y="3" width="108.66666666666666" height="72.333333333333329"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Tf2-1c-MMf">
-                                                                <rect key="frame" x="5" y="4.9999999999999964" width="98.666666666666671" height="61.666666666666657"/>
+                                                                <rect key="frame" x="5" y="5.0000000000000036" width="98.666666666666671" height="62.333333333333343"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KOz-0Q-49u">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="98.666666666666671" height="28.333333333333332"/>
-                                                                        <attributedString key="attributedText">
-                                                                            <fragment content="Distance">
-                                                                                <attributes>
-                                                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                                    <font key="NSFont" metaFont="system" size="14"/>
-                                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                                </attributes>
-                                                                            </fragment>
-                                                                        </attributedString>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KOz-0Q-49u">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="98.666666666666671" height="28.666666666666668"/>
+                                                                        <fontDescription key="fontDescription" name="Aero" family="Aero" pointSize="17"/>
+                                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K8D-PR-cNs">
-                                                                        <rect key="frame" x="0.0" y="33.333333333333258" width="98.666666666666671" height="28.333333333333329"/>
-                                                                        <attributedString key="attributedText">
-                                                                            <fragment content="240">
-                                                                                <attributes>
-                                                                                    <color key="NSColor" name="primaryText"/>
-                                                                                    <font key="NSFont" metaFont="system" size="23"/>
-                                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                                                </attributes>
-                                                                            </fragment>
-                                                                        </attributedString>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="240" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K8D-PR-cNs">
+                                                                        <rect key="frame" x="0.0" y="33.666666666666629" width="98.666666666666671" height="28.666666666666671"/>
+                                                                        <fontDescription key="fontDescription" name="Aero" family="Aero" pointSize="17"/>
+                                                                        <color key="textColor" name="primaryText"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>

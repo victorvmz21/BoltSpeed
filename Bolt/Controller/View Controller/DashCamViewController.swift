@@ -118,6 +118,8 @@ class DashCamViewController: UIViewController {
         screenShotLabel.layer.cornerRadius = 15
         screenShotLabel.layer.masksToBounds = true
         settingSpeedType()
+        
+        self.fourthLayerSpeedView.setNeedsDisplay()
     }
     
     func settingSpeedType() {
