@@ -143,6 +143,7 @@
 		523991F924A9B27100640C77 /* SpeedTrackListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTrackListTableViewController.swift; sourceTree = "<group>"; };
 		523991FB24A9B29400640C77 /* TrackSpeedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackSpeedDetailViewController.swift; sourceTree = "<group>"; };
 		523BEBB224CF92EA001CCCA0 /* CLLocationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationExtension.swift; sourceTree = "<group>"; };
+		523D8AF526240036001C5BCD /* Bolt.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Bolt.entitlements; sourceTree = "<group>"; };
 		525E0DFE24D7411600EC2748 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		525E0E0024D757A800EC2748 /* Bolt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bolt-Bridging-Header.h"; sourceTree = "<group>"; };
 		525E0E0124D757A900EC2748 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
@@ -155,7 +156,6 @@
 		5274390525EC56B100718243 /* HudViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudViewController.swift; sourceTree = "<group>"; };
 		5274390625EC56B100718243 /* DashCamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashCamViewController.swift; sourceTree = "<group>"; };
 		5274394325EC5DB500718243 /* CustomViewRotationDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewRotationDesignable.swift; sourceTree = "<group>"; };
-		529DBD1124B1060F00D64FE7 /* Bolt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bolt.entitlements; sourceTree = "<group>"; };
 		529DBD1224B1876800D64FE7 /* Aero.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aero.ttf; sourceTree = "<group>"; };
 		52A7EE9524A5BE6400624202 /* CustomDashedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDashedView.swift; sourceTree = "<group>"; };
 		52B3893424C3A79A00598456 /* homeToSchool.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = homeToSchool.gpx; path = Bolt/View/homeToSchool.gpx; sourceTree = SOURCE_ROOT; };
@@ -230,7 +230,7 @@
 		5205650F24A5AE93002A7C80 = {
 			isa = PBXGroup;
 			children = (
-				529DBD1124B1060F00D64FE7 /* Bolt.entitlements */,
+				523D8AF526240036001C5BCD /* Bolt.entitlements */,
 				5205651A24A5AE93002A7C80 /* Bolt */,
 				5205653124A5AE94002A7C80 /* BoltTests */,
 				5205653C24A5AE94002A7C80 /* BoltUITests */,
@@ -1082,15 +1082,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9P92JGZ383;
+				DEVELOPMENT_TEAM = 8XGA75NZTS;
 				INFOPLIST_FILE = "Watch/Bolt WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.atomuz.Bolt-Speed.watchkitapp.watchkitextension";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.atomuz.bolt.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "Bolt Extension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1106,15 +1106,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9P92JGZ383;
+				DEVELOPMENT_TEAM = 8XGA75NZTS;
 				INFOPLIST_FILE = "Watch/Bolt WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.atomuz.Bolt-Speed.watchkitapp.watchkitextension";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.atomuz.bolt.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "Bolt Extension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1131,14 +1131,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Bolt.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9P92JGZ383;
+				DEVELOPMENT_TEAM = 8XGA75NZTS;
 				IBSC_MODULE = Bolt_WatchKit_Extension;
 				INFOPLIST_FILE = "Watch/Bolt WatchKit App/Resources/Info.plist";
-				MARKETING_VERSION = 2.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.atomuz.Bolt-Speed.watchkitapp";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.atomuz.bolt.watchkitapp;
 				PRODUCT_NAME = Bolt;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1154,14 +1156,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Bolt.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9P92JGZ383;
+				DEVELOPMENT_TEAM = 8XGA75NZTS;
 				IBSC_MODULE = Bolt_WatchKit_Extension;
 				INFOPLIST_FILE = "Watch/Bolt WatchKit App/Resources/Info.plist";
-				MARKETING_VERSION = 2.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.atomuz.Bolt-Speed.watchkitapp";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.atomuz.bolt.watchkitapp;
 				PRODUCT_NAME = Bolt;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1176,18 +1180,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Bolt/Bolt.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Bolt.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9P92JGZ383;
+				DEVELOPMENT_TEAM = 8XGA75NZTS;
 				INFOPLIST_FILE = Bolt/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.atomuz.Bolt-Speed";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.atomuz.bolt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "Bolt/Helper+Extensions/Bolt-Bridging-Header.h";
@@ -1203,18 +1207,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = Bolt/Bolt.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Bolt.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9P92JGZ383;
+				DEVELOPMENT_TEAM = 8XGA75NZTS;
 				INFOPLIST_FILE = Bolt/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "io.atomuz.Bolt-Speed";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.atomuz.bolt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "Bolt/Helper+Extensions/Bolt-Bridging-Header.h";
@@ -1230,7 +1234,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9P92JGZ383;
+				DEVELOPMENT_TEAM = 8XGA75NZTS;
 				INFOPLIST_FILE = BoltTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1253,7 +1257,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9P92JGZ383;
+				DEVELOPMENT_TEAM = 8XGA75NZTS;
 				INFOPLIST_FILE = BoltTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1275,7 +1279,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9P92JGZ383;
+				DEVELOPMENT_TEAM = 8XGA75NZTS;
 				INFOPLIST_FILE = BoltUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1296,7 +1300,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9P92JGZ383;
+				DEVELOPMENT_TEAM = 8XGA75NZTS;
 				INFOPLIST_FILE = BoltUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
